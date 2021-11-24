@@ -1,0 +1,2 @@
+Esta carpeta incluye los drivers de las clases nuevas implementadas en el programa. Debido a que ya se comprobaron las demás clases en la anterior entrega,
+solo tenemos el driver de partida y el driver modificado de CapaDominioKakuro.

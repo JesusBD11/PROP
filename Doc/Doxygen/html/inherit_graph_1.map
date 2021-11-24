@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_dominio_1_1clases_1_1_casilla.html" title="Clase que representa una Casilla de un tablero de un Kakuro. " alt="" coords="153,5,219,32"/>
+<area shape="rect" id="node3" href="$class_dominio_1_1clases_1_1_kakuro.html" title="Clase que representa un kakuro. Contiene su tablero tanto información sobre el mismo. " alt="" coords="152,56,220,83"/>
+<area shape="rect" id="node4" href="$class_dominio_1_1clases_1_1partida.html" title="Clase que representa una partida. Cada partida consiste en el id del usuario que la guarda..." alt="" coords="152,107,220,133"/>
+<area shape="rect" id="node5" href="$class_dominio_1_1controladores_1_1_drivers_1_1_driver_partida.html" title="DriverPartida" alt="" coords="268,107,375,133"/>
+</map>

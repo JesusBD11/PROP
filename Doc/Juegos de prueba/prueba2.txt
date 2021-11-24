@@ -1,0 +1,9 @@
+Kakuro a introducir:
+
+* C2 C2
+F2 ? ?
+F2 ? ?
+
+Sortida: 
+
+Invalido!!

@@ -1,0 +1,4 @@
+pere,5
+aaa,8
+aa,0
+david,23423

@@ -1,0 +1,90 @@
+\section{Ctrl\+Partida Class Reference}
+\label{class_persistencia_1_1_ctrl_partida}\index{Ctrl\+Partida@{Ctrl\+Partida}}
+
+
+Clase que implementa la lectura y escritura de partidas en disco.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Ctrl\+Partida} ()
+\begin{DoxyCompactList}\small\item\em Contructora vacía de \doxyref{Ctrl\+Partida}{p.}{class_persistencia_1_1_ctrl_partida}. \end{DoxyCompactList}\item 
+Hash\+Map$<$ String, Array\+List$<$ \textbf{ partida} $>$ $>$ \textbf{ get\+Map} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el mapa de todas las partidas guardadas en el sistema. \end{DoxyCompactList}\item 
+void \textbf{ set\+Map} (Hash\+Map$<$ String, Array\+List$<$ \textbf{ partida} $>$$>$ partidas)
+\begin{DoxyCompactList}\small\item\em Actualiza la base de datos de partidas con el mapa introducido por parámetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que implementa la lectura y escritura de partidas en disco. 
+
+Definition at line 32 of file Ctrl\+Partida.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_persistencia_1_1_ctrl_partida_a112fde9e7ea7c6a19b8eddee9a7d9830}} 
+\index{Persistencia\+::\+Ctrl\+Partida@{Persistencia\+::\+Ctrl\+Partida}!Ctrl\+Partida@{Ctrl\+Partida}}
+\index{Ctrl\+Partida@{Ctrl\+Partida}!Persistencia\+::\+Ctrl\+Partida@{Persistencia\+::\+Ctrl\+Partida}}
+\subsubsection{Ctrl\+Partida()}
+{\footnotesize\ttfamily \textbf{ Ctrl\+Partida} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Contructora vacía de \doxyref{Ctrl\+Partida}{p.}{class_persistencia_1_1_ctrl_partida}. 
+
+\begin{DoxyPostcond}{Postcondition}
+Crea una instancia vacía de \doxyref{Ctrl\+Partida}{p.}{class_persistencia_1_1_ctrl_partida}. 
+\end{DoxyPostcond}
+
+
+Definition at line 41 of file Ctrl\+Partida.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_persistencia_1_1_ctrl_partida_aa0df641492ca469159123d011c32f943}} 
+\index{Persistencia\+::\+Ctrl\+Partida@{Persistencia\+::\+Ctrl\+Partida}!get\+Map@{get\+Map}}
+\index{get\+Map@{get\+Map}!Persistencia\+::\+Ctrl\+Partida@{Persistencia\+::\+Ctrl\+Partida}}
+\subsubsection{get\+Map()}
+{\footnotesize\ttfamily Hash\+Map$<$String,Array\+List$<$\textbf{ partida}$>$ $>$ get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el mapa de todas las partidas guardadas en el sistema. 
+
+\begin{DoxyPostcond}{Postcondition}
+se devuelve el mapa. 
+\end{DoxyPostcond}
+
+
+Definition at line 51 of file Ctrl\+Partida.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_partida_ab0a0ddcd86873329da6956c7faadf5a5}} 
+\index{Persistencia\+::\+Ctrl\+Partida@{Persistencia\+::\+Ctrl\+Partida}!set\+Map@{set\+Map}}
+\index{set\+Map@{set\+Map}!Persistencia\+::\+Ctrl\+Partida@{Persistencia\+::\+Ctrl\+Partida}}
+\subsubsection{set\+Map()}
+{\footnotesize\ttfamily void set\+Map (\begin{DoxyParamCaption}\item[{Hash\+Map$<$ String, Array\+List$<$ \textbf{ partida} $>$$>$}]{partidas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Actualiza la base de datos de partidas con el mapa introducido por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em partidas} & = Mapa con todas las partidas de todos los usuarios que será la nueva información de las partidas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+tenemos un archivo serializado Datos\+Partidas en la carpeta de persistencia del programa con la información de partidas. 
+\end{DoxyPostcond}
+
+
+Definition at line 70 of file Ctrl\+Partida.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Persistencia/\textbf{ Ctrl\+Partida.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,31 @@
+Kakuro a introducir:
+
+* C3 C3
+F3 ? ?
+F3 ? ?
+
+Solución del Kakuro:
+
+* C3 C3
+F3 1 2
+F3 2 1
+
+
+Kakuro a introducir:
+
+* C23 C11 C29 C5 C13
+F26 ? ? ? ? ?
+F22 ? ? ? C15F9 ?
+F20 ? ? ? ? C16
+F2 ? C2F19 ? ? ?
+F9 ? ? ? F7 ?
+
+
+Solución del Kakuro:
+
+* C23 C11 C29 C5 C13 
+F26 6 2 9 5 4 
+F22 9 5 8 C15F9 9 
+F20 5 4 2 9 C16 
+F2 2 C2F19 4 6 9 
+F9 1 2 6 F7 7 

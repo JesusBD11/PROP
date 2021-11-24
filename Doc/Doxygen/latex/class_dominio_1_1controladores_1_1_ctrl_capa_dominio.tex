@@ -1,0 +1,559 @@
+\section{Ctrl\+Capa\+Dominio Class Reference}
+\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio}\index{Ctrl\+Capa\+Dominio@{Ctrl\+Capa\+Dominio}}
+
+
+Clase que se utiliza como intermediaria entre presentacion y persistencia. Transforma los datos que recibe de persistencia y se los pasa a presentacion.  
+
+
+
+
+Collaboration diagram for Ctrl\+Capa\+Dominio\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{class_dominio_1_1controladores_1_1_ctrl_capa_dominio__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Ctrl\+Capa\+Dominio} ()
+\begin{DoxyCompactList}\small\item\em Constructora de \doxyref{Ctrl\+Capa\+Dominio}{p.}{class_dominio_1_1controladores_1_1_ctrl_capa_dominio}. \end{DoxyCompactList}\item 
+void \textbf{ anadir\+\_\+usuario} (String usuario, String password)
+\begin{DoxyCompactList}\small\item\em Recibe los datos de un Usuario que debe mandar a persistencia y que esta se encargue de guardarlos. \end{DoxyCompactList}\item 
+boolean \textbf{ comprobar} (int n, String Usuario, String Password)
+\begin{DoxyCompactList}\small\item\em Comrpueba si el Usuario que pretende hacer inicio de sesion, ha introcucido sus datos correctamente. En el caso que quiera regsitrarse, comprobará que el nombre de Usuario que elija no exista. \end{DoxyCompactList}\item 
+boolean \textbf{ Log\+In} (String User, char[$\,$] Pass)
+\begin{DoxyCompactList}\small\item\em recibe un usuario password de la capa de presentacion y deberá comprobar si el login es correcto \end{DoxyCompactList}\item 
+boolean \textbf{ Sign\+Up} (String User, char[$\,$] Pass)
+\begin{DoxyCompactList}\small\item\em recibe un usuario password de la capa de presentacion y deberá comprobar si el registro será posible \end{DoxyCompactList}\item 
+String [$\,$] \textbf{ Cargar\+I\+Ds} (String User)
+\begin{DoxyCompactList}\small\item\em funcion que se encarga de buscar los ids de la partidas que tiene guardadas el usuario con nombre \char`\"{}\+User\char`\"{} que se pasa como parámetro \end{DoxyCompactList}\item 
+boolean \textbf{ guardar\+\_\+partida} (String I\+D\+User, String I\+D\+Partida, String[$\,$][$\,$] tablero, int I\+D\+Kakuro, int tiempo, boolean finished)
+\begin{DoxyCompactList}\small\item\em funcion que se encarga de recibir los datos de una partida en juego que se quiere guardar y almacenarlos \end{DoxyCompactList}\item 
+String [$\,$][$\,$] \textbf{ cargar\+\_\+partida} (String User, String I\+D\+Partida)
+\begin{DoxyCompactList}\small\item\em función que se encarga de buscar y transformar una partida solicitada por un usuario, para que se pueda retomar por donde la dejó \end{DoxyCompactList}\item 
+String [$\,$] \textbf{ get\+\_\+lista\+\_\+kakuro} ()
+\begin{DoxyCompactList}\small\item\em busca todos los Ids que hay almacenados en la Biblioteca de Kakuros \end{DoxyCompactList}\item 
+String [$\,$][$\,$] \textbf{ Show\+Solution} (String ID)
+\begin{DoxyCompactList}\small\item\em Calcula la solución del kakuro que está en juego. \end{DoxyCompactList}\item 
+String \textbf{ Show\+Ranking} ()
+\begin{DoxyCompactList}\small\item\em obtendra el ranking de jugadores \end{DoxyCompactList}\item 
+void \textbf{ update\+Ranking} (String Key, double Value)
+\begin{DoxyCompactList}\small\item\em se encarga de actulizar el ranking cuando se le pasa un jugador y una puntuacion. Si el usuario no habia terminado ninguna partid antes, se le añadirá nuevo. En otro caso se le actulizará la puntuación \end{DoxyCompactList}\item 
+String [$\,$][$\,$] \textbf{ getkakuroenjuego} (int id)
+\begin{DoxyCompactList}\small\item\em buscará el kakuro que tiene como identificador el id que se pasa como parámetro y lo teranformará a una matriz de String \end{DoxyCompactList}\item 
+int \textbf{ generar\+Kakuro} (int dificultad)
+\begin{DoxyCompactList}\small\item\em generará un kakuro con la dificultad indicada \end{DoxyCompactList}\item 
+int \textbf{ generar\+Kakuro} (int dimensiones, int num\+Casillas\+Negras)
+\item 
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a95df7bb86f38a4123b7caf44b60afef1}} 
+String {\bfseries generar\+Kakuro\+Manual} (String[$\,$][$\,$] grid\+Contents\+Matrix)
+\item 
+int \textbf{ addkakuro} (\textbf{ Casilla}[$\,$][$\,$] tablero)
+\begin{DoxyCompactList}\small\item\em se encarga de pasarle un kakuro a la capa de persistencia para que lo guarde \end{DoxyCompactList}\item 
+\textbf{ Kakuro} \textbf{ read\+\_\+kakuro\+\_\+file} (int ID, int option)
+\begin{DoxyCompactList}\small\item\em buscará un kakuro que tenga el id que se pasa como paramétro \end{DoxyCompactList}\item 
+int \textbf{ comprobar\+Movimiento} (int x, int y, String value, String[$\,$][$\,$] grid\+Contents\+Matrix)
+\begin{DoxyCompactList}\small\item\em se encarga de comprobar si el valor \char`\"{}value\char`\"{} en el kakuro recibido es valido en la posicion \char`\"{}x,y\char`\"{} \end{DoxyCompactList}\item 
+int \textbf{ get\+Kakuro\+De\+Partida} (String I\+D\+Usuario, String I\+D\+Partida)
+\begin{DoxyCompactList}\small\item\em se encarga de obtener, si existe, el kakuro del usuario I\+D\+Usuario identificado por I\+D\+Partida \end{DoxyCompactList}\item 
+void \textbf{ set\+Map} ()
+\begin{DoxyCompactList}\small\item\em llama a la funcion set\+Map de la clase Ctrl\+Persistencia pasandole el atributo listaP \end{DoxyCompactList}\item 
+int \textbf{ get\+Time\+De\+Partida} (String I\+D\+Usuario, String I\+D\+Partida)
+\begin{DoxyCompactList}\small\item\em obtiene el tiempo transcurrido de la partida identificada con \char`\"{}\+I\+D\+Partida\char`\"{} asociado al usuario \char`\"{}\+I\+D\+Usuario\char`\"{}(si existe) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que se utiliza como intermediaria entre presentacion y persistencia. Transforma los datos que recibe de persistencia y se los pasa a presentacion. 
+
+Definition at line 37 of file Ctrl\+Capa\+Dominio.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a61d89e049d057d28ce0a8d9adbf45e90}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!Ctrl\+Capa\+Dominio@{Ctrl\+Capa\+Dominio}}
+\index{Ctrl\+Capa\+Dominio@{Ctrl\+Capa\+Dominio}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{Ctrl\+Capa\+Dominio()}
+{\footnotesize\ttfamily \textbf{ Ctrl\+Capa\+Dominio} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructora de \doxyref{Ctrl\+Capa\+Dominio}{p.}{class_dominio_1_1controladores_1_1_ctrl_capa_dominio}. 
+
+\begin{DoxyPostcond}{Postcondition}
+se crea una nueva instancia de \doxyref{Ctrl\+Capa\+Dominio}{p.}{class_dominio_1_1controladores_1_1_ctrl_capa_dominio} 
+\end{DoxyPostcond}
+
+
+Definition at line 49 of file Ctrl\+Capa\+Dominio.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a6953d179f5f27e8d94c6dfb6d9b1a663}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!addkakuro@{addkakuro}}
+\index{addkakuro@{addkakuro}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{addkakuro()}
+{\footnotesize\ttfamily int addkakuro (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{tablero[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+se encarga de pasarle un kakuro a la capa de persistencia para que lo guarde 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tablero} & = matriz de casillas que representa el kakuro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve un entero que representa el id que se la ha asignado al nuevo kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 566 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a5c5e5b25f6e13bcff9a5db7afd8798d3}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!anadir\+\_\+usuario@{anadir\+\_\+usuario}}
+\index{anadir\+\_\+usuario@{anadir\+\_\+usuario}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{anadir\+\_\+usuario()}
+{\footnotesize\ttfamily void anadir\+\_\+usuario (\begin{DoxyParamCaption}\item[{String}]{usuario,  }\item[{String}]{password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recibe los datos de un Usuario que debe mandar a persistencia y que esta se encargue de guardarlos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Usuario} & = Es el nombre de usuario que ha elegido para el registro \\
+\hline
+{\em Password} & = Es la contraseña que el usuario ha elegido para el registro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se ha guaradado un nuevo Usuario con \char`\"{}\+Usuario\char`\"{} y \char`\"{}\+Password\char`\"{} 
+\end{DoxyPostcond}
+
+
+Definition at line 71 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_ab6c07eaf528a5ad487369a7561766057}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!cargar\+\_\+partida@{cargar\+\_\+partida}}
+\index{cargar\+\_\+partida@{cargar\+\_\+partida}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{cargar\+\_\+partida()}
+{\footnotesize\ttfamily String [$\,$][$\,$] cargar\+\_\+partida (\begin{DoxyParamCaption}\item[{String}]{User,  }\item[{String}]{I\+D\+Partida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+función que se encarga de buscar y transformar una partida solicitada por un usuario, para que se pueda retomar por donde la dejó 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User} & = nombre de usuario del jugador \\
+\hline
+{\em I\+D\+Partida} & = nombre con el cual guardó la partida anteriormente\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se devuelve una matriz de Strning la cual contiene el tablero del kakuro tal y como se quedó la ultima vez que jugó 
+\end{DoxyPostcond}
+
+
+Definition at line 297 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a1da2be254d68f7c913ca7b872ffa3af2}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!Cargar\+I\+Ds@{Cargar\+I\+Ds}}
+\index{Cargar\+I\+Ds@{Cargar\+I\+Ds}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{Cargar\+I\+Ds()}
+{\footnotesize\ttfamily String [$\,$] Cargar\+I\+Ds (\begin{DoxyParamCaption}\item[{String}]{User }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+funcion que se encarga de buscar los ids de la partidas que tiene guardadas el usuario con nombre \char`\"{}\+User\char`\"{} que se pasa como parámetro 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User} & = nombre de Usuario para el cual se quiere buscar las partidas guardadas\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se devuelve un vector de Strings con los nombres de sus partidas 
+\end{DoxyPostcond}
+
+
+Definition at line 169 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a1e108c711ab803c873740074187ffc25}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!comprobar@{comprobar}}
+\index{comprobar@{comprobar}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{comprobar()}
+{\footnotesize\ttfamily boolean comprobar (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{String}]{Usuario,  }\item[{String}]{Password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comrpueba si el Usuario que pretende hacer inicio de sesion, ha introcucido sus datos correctamente. En el caso que quiera regsitrarse, comprobará que el nombre de Usuario que elija no exista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & = Parámetro que determina si hara una funcionalidad u otra. \\
+\hline
+{\em Usuario} & = Es el nombre de usuario que ha elegido para el registro o con el que quiere iniciar sesion \\
+\hline
+{\em Password} & = Es la contraseña que el usuario ha elegido para el registro o con la que quiere iniciar sesion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Devuelve un booleano que indicará al sistema lo que debe hacer segun lo que ha pedido el usuario 
+\end{DoxyPostcond}
+
+
+Definition at line 92 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a6f44b9ac88eba045ce4c5ad6bb03e435}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!comprobar\+Movimiento@{comprobar\+Movimiento}}
+\index{comprobar\+Movimiento@{comprobar\+Movimiento}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{comprobar\+Movimiento()}
+{\footnotesize\ttfamily int comprobar\+Movimiento (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{String}]{value,  }\item[{String}]{grid\+Contents\+Matrix[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+se encarga de comprobar si el valor \char`\"{}value\char`\"{} en el kakuro recibido es valido en la posicion \char`\"{}x,y\char`\"{} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & = valor de la posicion modificada en el eje x \\
+\hline
+{\em y} & = valor de la posicion modificada en el eje y \\
+\hline
+{\em value} & = valor modificado \\
+\hline
+{\em grid\+Contents\+Matrix} & = tablero sobre el cual se hizo la modificacion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se ha devuelto el resultado de llamar a la funcion con el mismo nombre de la clase Kakuro. 
+\end{DoxyPostcond}
+
+
+Definition at line 598 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a4e42ae85a1df8f7e0c667ab371e0a6f5}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!generar\+Kakuro@{generar\+Kakuro}}
+\index{generar\+Kakuro@{generar\+Kakuro}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{generar\+Kakuro()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily int generar\+Kakuro (\begin{DoxyParamCaption}\item[{int}]{dificultad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+generará un kakuro con la dificultad indicada 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dificultad} & = es la dificultad con la que se generará el kakuro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devolverá un entero que representa el id que tiene el nuevo kakuro que se ha generado 
+\end{DoxyPostcond}
+
+
+Definition at line 517 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a67572196715612e05554990a74b06bf4}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!generar\+Kakuro@{generar\+Kakuro}}
+\index{generar\+Kakuro@{generar\+Kakuro}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{generar\+Kakuro()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily int generar\+Kakuro (\begin{DoxyParamCaption}\item[{int}]{dimensiones,  }\item[{int}]{num\+Casillas\+Negras }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+generará un kakuro con las caracteristicas que se pasan como parámetros
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimensiones} & = dimensiones con las cuales se generará el kakuro \\
+\hline
+{\em num\+Casillas\+Negras} & = numero de casillas negras que tendrá el kakuro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devolverá un entero que representa el id que tiene el nuevo kakuro que se ha generado 
+\end{DoxyPostcond}
+
+
+Definition at line 530 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a45ebd0e10cf0731cbd580006a2b9e365}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!get\+\_\+lista\+\_\+kakuro@{get\+\_\+lista\+\_\+kakuro}}
+\index{get\+\_\+lista\+\_\+kakuro@{get\+\_\+lista\+\_\+kakuro}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{get\+\_\+lista\+\_\+kakuro()}
+{\footnotesize\ttfamily String [$\,$] get\+\_\+lista\+\_\+kakuro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+busca todos los Ids que hay almacenados en la Biblioteca de Kakuros 
+
+\begin{DoxyPostcond}{Postcondition}
+devuelve un vector de Strings con los I\+Ds de los Kakuro existentes en la biblioteca 
+\end{DoxyPostcond}
+
+
+Definition at line 391 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a14997dd10ecf7cf3cc5fbf85517abc65}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!get\+Kakuro\+De\+Partida@{get\+Kakuro\+De\+Partida}}
+\index{get\+Kakuro\+De\+Partida@{get\+Kakuro\+De\+Partida}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{get\+Kakuro\+De\+Partida()}
+{\footnotesize\ttfamily int get\+Kakuro\+De\+Partida (\begin{DoxyParamCaption}\item[{String}]{I\+D\+Usuario,  }\item[{String}]{I\+D\+Partida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+se encarga de obtener, si existe, el kakuro del usuario I\+D\+Usuario identificado por I\+D\+Partida 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I\+D\+Usuario} & = identificador del usuario \\
+\hline
+{\em I\+D\+Partida} & = identificador de la partida\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+si se ha encontrado el Kakuro solicitado lo devuelve. En caso contrario devuelve -\/1 
+\end{DoxyPostcond}
+
+
+Definition at line 622 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a6a6d6fda88d7f224cac678d508f5c2a2}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!getkakuroenjuego@{getkakuroenjuego}}
+\index{getkakuroenjuego@{getkakuroenjuego}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{getkakuroenjuego()}
+{\footnotesize\ttfamily String [$\,$][$\,$] getkakuroenjuego (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+buscará el kakuro que tiene como identificador el id que se pasa como parámetro y lo teranformará a una matriz de String 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & = identificador del kakuro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve una matriz de String a la capa de presentación 
+\end{DoxyPostcond}
+
+
+Definition at line 493 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a53f375f5796ebbe633b7a8e379580d6b}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!get\+Time\+De\+Partida@{get\+Time\+De\+Partida}}
+\index{get\+Time\+De\+Partida@{get\+Time\+De\+Partida}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{get\+Time\+De\+Partida()}
+{\footnotesize\ttfamily int get\+Time\+De\+Partida (\begin{DoxyParamCaption}\item[{String}]{I\+D\+Usuario,  }\item[{String}]{I\+D\+Partida }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+obtiene el tiempo transcurrido de la partida identificada con \char`\"{}\+I\+D\+Partida\char`\"{} asociado al usuario \char`\"{}\+I\+D\+Usuario\char`\"{}(si existe) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I\+D\+Usuario} & = identificador del usuario \\
+\hline
+{\em I\+D\+Partida} & = identificador de la partida\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+si se ha encontrado el Kakuro solicitado se devuelve el tiempo. En caso contrario devuelve -\/1 
+\end{DoxyPostcond}
+
+
+Definition at line 670 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a0f167cb1bb1f92b4725dcd5a9af468bf}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!guardar\+\_\+partida@{guardar\+\_\+partida}}
+\index{guardar\+\_\+partida@{guardar\+\_\+partida}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{guardar\+\_\+partida()}
+{\footnotesize\ttfamily boolean guardar\+\_\+partida (\begin{DoxyParamCaption}\item[{String}]{I\+D\+User,  }\item[{String}]{I\+D\+Partida,  }\item[{String}]{tablero[$\,$][$\,$],  }\item[{int}]{I\+D\+Kakuro,  }\item[{int}]{tiempo,  }\item[{boolean}]{finished }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+funcion que se encarga de recibir los datos de una partida en juego que se quiere guardar y almacenarlos 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I\+D\+User} & = nombre de usuario del jugador \\
+\hline
+{\em I\+D\+Partida} & = nombre con el cual ha guardado la partida \\
+\hline
+{\em tablero} & = tablero de la partida \\
+\hline
+{\em I\+D\+Kakuro} & = id del kakuro en juego \\
+\hline
+{\em tiempo} & = tiempo de juego de la partida \\
+\hline
+{\em finished} & = booleano que solo será true en el caso de que la partida este acabada, false en cualquier otro caso\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se transformarán los datos y se almacenarán en forma de partida y se pasará a persistencia para que lo guarde, en el caso de que la partida esté acabada, se actualizarán el ranking 
+\end{DoxyPostcond}
+
+
+Definition at line 208 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_ad57530714d88f506d201d718395cf577}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!Log\+In@{Log\+In}}
+\index{Log\+In@{Log\+In}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{Log\+In()}
+{\footnotesize\ttfamily boolean Log\+In (\begin{DoxyParamCaption}\item[{String}]{User,  }\item[{char [$\,$]}]{Pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+recibe un usuario password de la capa de presentacion y deberá comprobar si el login es correcto 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User} & = String que corresponde al nombre de usuario \\
+\hline
+{\em Pass} & = password del User\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+true si el login es es correcto, false si es no es correcto 
+\end{DoxyPostcond}
+
+
+Definition at line 127 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a4bdff244696da8d226b4072f7982fd01}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!read\+\_\+kakuro\+\_\+file@{read\+\_\+kakuro\+\_\+file}}
+\index{read\+\_\+kakuro\+\_\+file@{read\+\_\+kakuro\+\_\+file}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{read\+\_\+kakuro\+\_\+file()}
+{\footnotesize\ttfamily \textbf{ Kakuro} read\+\_\+kakuro\+\_\+file (\begin{DoxyParamCaption}\item[{int}]{ID,  }\item[{int}]{option }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+buscará un kakuro que tenga el id que se pasa como paramétro 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & = id del kakuro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se devuelve un objeto kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 581 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_aa942c39a62e33ba7f787f59bc6a319e5}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!set\+Map@{set\+Map}}
+\index{set\+Map@{set\+Map}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{set\+Map()}
+{\footnotesize\ttfamily void set\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+llama a la funcion set\+Map de la clase Ctrl\+Persistencia pasandole el atributo listaP 
+
+\begin{DoxyPostcond}{Postcondition}
+
+\end{DoxyPostcond}
+
+
+Definition at line 657 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_ab7e52763589137009b637fef9ff3ae5c}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!Show\+Ranking@{Show\+Ranking}}
+\index{Show\+Ranking@{Show\+Ranking}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{Show\+Ranking()}
+{\footnotesize\ttfamily String Show\+Ranking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+obtendra el ranking de jugadores 
+
+\begin{DoxyPostcond}{Postcondition}
+devolverá el ranking en formato String 
+\end{DoxyPostcond}
+
+
+Definition at line 457 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a0202eee84aef9c8c3e58042fb477600e}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!Show\+Solution@{Show\+Solution}}
+\index{Show\+Solution@{Show\+Solution}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{Show\+Solution()}
+{\footnotesize\ttfamily String [$\,$][$\,$] Show\+Solution (\begin{DoxyParamCaption}\item[{String}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Calcula la solución del kakuro que está en juego. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & = identificador del kakuro que se quiere resolver\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se alamcena la solucion del kakuro en una matriz de Strings y se retorna 
+\end{DoxyPostcond}
+
+
+Definition at line 408 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a8a4e10e8094cac30e3c5536b3a2364ae}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!Sign\+Up@{Sign\+Up}}
+\index{Sign\+Up@{Sign\+Up}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{Sign\+Up()}
+{\footnotesize\ttfamily boolean Sign\+Up (\begin{DoxyParamCaption}\item[{String}]{User,  }\item[{char [$\,$]}]{Pass }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+recibe un usuario password de la capa de presentacion y deberá comprobar si el registro será posible 
+
+
+\begin{DoxyParams}{Parameters}
+{\em User} & = String que corresponde al nombre de usuario \\
+\hline
+{\em Pass} & = password del User\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+si el registro es posible, la funcion añadirá al usuario al sistema e informará a la capa de presentacion con un true. En cualquier otro caso, no se añadirá el usuario y devolverá false. 
+\end{DoxyPostcond}
+
+
+Definition at line 146 of file Ctrl\+Capa\+Dominio.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_ctrl_capa_dominio_a2755141534bc4e22d056f09dc68880f5}} 
+\index{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}!update\+Ranking@{update\+Ranking}}
+\index{update\+Ranking@{update\+Ranking}!Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio@{Dominio\+::controladores\+::\+Ctrl\+Capa\+Dominio}}
+\subsubsection{update\+Ranking()}
+{\footnotesize\ttfamily void update\+Ranking (\begin{DoxyParamCaption}\item[{String}]{Key,  }\item[{double}]{Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+se encarga de actulizar el ranking cuando se le pasa un jugador y una puntuacion. Si el usuario no habia terminado ninguna partid antes, se le añadirá nuevo. En otro caso se le actulizará la puntuación 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Key} & = nombre de Usario del jugador \\
+\hline
+{\em value} & = puntuación que ha obtenido en la partida\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+el ranking está actulizado despues de pasarselo a peristencia para que lo guarde 
+\end{DoxyPostcond}
+
+
+Definition at line 474 of file Ctrl\+Capa\+Dominio.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Dominio/controladores/\textbf{ Ctrl\+Capa\+Dominio.\+java}\end{DoxyCompactItemize}

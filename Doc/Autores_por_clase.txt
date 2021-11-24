@@ -1,0 +1,5 @@
+Mauro García Lorenzo: Kakuro,CtrlCapaDominio,CtrlPartida,CtrlKakuro
+Pere Masip Rispa: CapaDominioKakuro,CtrlCapaDominio,partida,partidaTest
+David Nogales Pérez: Kakuro_Game, CasillaTest, KakuroTest,CtrlPresentación, Vistas, Makefile
+Jesús Benitez Díaz: Casilla, CtrlPersistencia, CtrlRanking, CtrlRegistro
+

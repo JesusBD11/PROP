@@ -1,0 +1,105 @@
+\section{Biblioteca\+\_\+\+Kakuro Class Reference}
+\label{class_dominio_1_1clases_1_1_biblioteca___kakuro}\index{Biblioteca\+\_\+\+Kakuro@{Biblioteca\+\_\+\+Kakuro}}
+
+
+Inheritance diagram for Biblioteca\+\_\+\+Kakuro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=215pt]{class_dominio_1_1clases_1_1_biblioteca___kakuro__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Biblioteca\+\_\+\+Kakuro} ()
+\item 
+int \textbf{ read\+\_\+kakuro\+\_\+consola} ()
+\begin{DoxyCompactList}\small\item\em Lee un kakuro por consola. \end{DoxyCompactList}\item 
+\textbf{ Kakuro} \textbf{ read\+\_\+kakuro\+\_\+file} (int I\+D\+\_\+kakuro, String Path)
+\begin{DoxyCompactList}\small\item\em Lee uun kakuro desde un archivo .txt. \end{DoxyCompactList}\item 
+int \textbf{ anadir\+\_\+kakuro} (\textbf{ Casilla}[$\,$][$\,$] k)
+\begin{DoxyCompactList}\small\item\em Añade un kakuro a la biblioteca en formato .txt. \end{DoxyCompactList}\item 
+\mbox{\label{class_dominio_1_1clases_1_1_biblioteca___kakuro_a223a34412460a2e4c66d94ab7b0b749a}} 
+boolean {\bfseries comprobar\+\_\+line} (String linea, int n)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+David Nogales 
+\end{DoxyAuthor}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_dominio_1_1clases_1_1_biblioteca___kakuro_ab2ceae2be24b7f953bde1f291d346689}} 
+\index{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro@{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro}!Biblioteca\+\_\+\+Kakuro@{Biblioteca\+\_\+\+Kakuro}}
+\index{Biblioteca\+\_\+\+Kakuro@{Biblioteca\+\_\+\+Kakuro}!Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro@{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro}}
+\subsubsection{Biblioteca\+\_\+\+Kakuro()}
+{\footnotesize\ttfamily \textbf{ Biblioteca\+\_\+\+Kakuro} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+constructora de Biblioteca\+\_\+kakuro
+
+\begin{DoxyPostcond}{Postcondition}
+crea una una instancia de biblioteca\+\_\+kakuro 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_dominio_1_1clases_1_1_biblioteca___kakuro_af64ba497e4cc5c2e0df3ab317017d022}} 
+\index{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro@{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro}!anadir\+\_\+kakuro@{anadir\+\_\+kakuro}}
+\index{anadir\+\_\+kakuro@{anadir\+\_\+kakuro}!Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro@{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro}}
+\subsubsection{anadir\+\_\+kakuro()}
+{\footnotesize\ttfamily int anadir\+\_\+kakuro (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{k[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Añade un kakuro a la biblioteca en formato .txt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = Es el tablero del kakuro que se quiere guardar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve el Id con el que se ha guardado el \doxyref{Kakuro}{p.}{class_dominio_1_1clases_1_1_kakuro} 
+\end{DoxyPostcond}
+\mbox{\label{class_dominio_1_1clases_1_1_biblioteca___kakuro_a43a2fe409462cc4b7a640f8961faca64}} 
+\index{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro@{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro}!read\+\_\+kakuro\+\_\+consola@{read\+\_\+kakuro\+\_\+consola}}
+\index{read\+\_\+kakuro\+\_\+consola@{read\+\_\+kakuro\+\_\+consola}!Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro@{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro}}
+\subsubsection{read\+\_\+kakuro\+\_\+consola()}
+{\footnotesize\ttfamily int read\+\_\+kakuro\+\_\+consola (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Lee un kakuro por consola. 
+
+\begin{DoxyPostcond}{Postcondition}
+devuelve el ID que se le asigna al kakuro, en caso de que no se pueda leer, devolverá -\/1 
+\end{DoxyPostcond}
+\mbox{\label{class_dominio_1_1clases_1_1_biblioteca___kakuro_aa2b32611c11a7eb8c311a8b3720f86dd}} 
+\index{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro@{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro}!read\+\_\+kakuro\+\_\+file@{read\+\_\+kakuro\+\_\+file}}
+\index{read\+\_\+kakuro\+\_\+file@{read\+\_\+kakuro\+\_\+file}!Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro@{Dominio\+::clases\+::\+Biblioteca\+\_\+\+Kakuro}}
+\subsubsection{read\+\_\+kakuro\+\_\+file()}
+{\footnotesize\ttfamily \textbf{ Kakuro} read\+\_\+kakuro\+\_\+file (\begin{DoxyParamCaption}\item[{int}]{I\+D\+\_\+kakuro,  }\item[{String}]{Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Lee uun kakuro desde un archivo .txt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em I\+D\+\_\+kakuro} & = es el Id del kakuro que queremos leer \\
+\hline
+{\em Path} & = es la ruta donde se encuentra el kakuro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve un kakuro 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Dominio/clases/Biblioteca\+\_\+\+Kakuro.\+java\end{DoxyCompactItemize}

@@ -1,0 +1,271 @@
+\section{Kakuro Class Reference}
+\label{class_dominio_1_1clases_1_1_kakuro}\index{Kakuro@{Kakuro}}
+
+
+Clase que representa un kakuro. Contiene su tablero tanto información sobre el mismo.  
+
+
+
+
+Inheritance diagram for Kakuro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_dominio_1_1clases_1_1_kakuro__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Kakuro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_dominio_1_1clases_1_1_kakuro__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Kakuro} ()
+\begin{DoxyCompactList}\small\item\em Constructora de kakuro. \end{DoxyCompactList}\item 
+\textbf{ Kakuro} (int c\+\_\+blancas, int c\+\_\+negras, \textbf{ Casilla} [$\,$][$\,$] k)
+\begin{DoxyCompactList}\small\item\em Constructora de \doxyref{Kakuro}{p.}{class_dominio_1_1clases_1_1_kakuro}. \end{DoxyCompactList}\item 
+void \textbf{ set\+Blancas} (int b)
+\begin{DoxyCompactList}\small\item\em Modifica el valor de celdas\+\_\+blancas. \end{DoxyCompactList}\item 
+int \textbf{ get\+Filas} ()
+\begin{DoxyCompactList}\small\item\em Consultora del las filas del kakuro. \end{DoxyCompactList}\item 
+int \textbf{ get\+Columnas} ()
+\begin{DoxyCompactList}\small\item\em Consultora del las columnas del kakuro. \end{DoxyCompactList}\item 
+\textbf{ Casilla} [$\,$][$\,$] \textbf{ get\+Tablero} ()
+\begin{DoxyCompactList}\small\item\em Consultora del tablero del kakuro. \end{DoxyCompactList}\item 
+int \textbf{ get\+I\+D\+\_\+\+Kakuro} ()
+\begin{DoxyCompactList}\small\item\em Consultora del Identificador del kakuro. \end{DoxyCompactList}\item 
+void \textbf{ set\+I\+D\+\_\+\+Kakuro} (int id)
+\begin{DoxyCompactList}\small\item\em Modificadora del ID de \doxyref{Kakuro}{p.}{class_dominio_1_1clases_1_1_kakuro}. \end{DoxyCompactList}\item 
+int \textbf{ getceldas\+\_\+blancas} ()
+\begin{DoxyCompactList}\small\item\em Consultora de las soluciones del kakuro. \end{DoxyCompactList}\item 
+int \textbf{ getceldas\+\_\+negras} ()
+\begin{DoxyCompactList}\small\item\em Consultora del numero de celdas negras del kakuro. \end{DoxyCompactList}\item 
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_a9b80dd6d8e29a4aa4b47a07388baff19}} 
+void {\bfseries print\+Grid} ()
+\item 
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_a0315a918ba5b494fb4f010e09d763e60}} 
+void {\bfseries Stringto\+Grid} (String k)
+\item 
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_a6b9732f93998f32d752843518a41239f}} 
+void {\bfseries set\+Dif} (double dif)
+\item 
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_af497e1c6b31715638bfc30c67b1756b4}} 
+double {\bfseries get\+Dif} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que representa un kakuro. Contiene su tablero tanto información sobre el mismo. 
+
+Definition at line 27 of file Kakuro.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_adec990e3614f516b12661ff0ed467f92}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!Kakuro@{Kakuro}}
+\index{Kakuro@{Kakuro}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{Kakuro()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \textbf{ Kakuro} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructora de kakuro. 
+
+\begin{DoxyPostcond}{Postcondition}
+crea un kakuro null 
+\end{DoxyPostcond}
+
+
+Definition at line 54 of file Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_af727cbfb747a04b03eda399125e5d23f}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!Kakuro@{Kakuro}}
+\index{Kakuro@{Kakuro}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{Kakuro()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \textbf{ Kakuro} (\begin{DoxyParamCaption}\item[{int}]{c\+\_\+blancas,  }\item[{int}]{c\+\_\+negras,  }\item[{\textbf{ Casilla}}]{k[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructora de \doxyref{Kakuro}{p.}{class_dominio_1_1clases_1_1_kakuro}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c\+\_\+blancas} & = numero de casillas blancas del kakuro \\
+\hline
+{\em c\+\_\+megras} & = numero de casillas negras del kakuro \\
+\hline
+{\em k} & = matriz de casillas que represnta el tablero\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se creará un kakuro con esos parámetros 
+\end{DoxyPostcond}
+
+
+Definition at line 65 of file Kakuro.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_a5b5d13352a6553be938e417f987c392f}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!getceldas\+\_\+blancas@{getceldas\+\_\+blancas}}
+\index{getceldas\+\_\+blancas@{getceldas\+\_\+blancas}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{getceldas\+\_\+blancas()}
+{\footnotesize\ttfamily int getceldas\+\_\+blancas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora de las soluciones del kakuro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Devuelve un vector con las soluciones del kakuro Consultora del numero de celdas blancas del kakuro
+
+Devuelve el numero de celdas blancas del kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 138 of file Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_acf98d73784f1c017662808c6cc13f368}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!getceldas\+\_\+negras@{getceldas\+\_\+negras}}
+\index{getceldas\+\_\+negras@{getceldas\+\_\+negras}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{getceldas\+\_\+negras()}
+{\footnotesize\ttfamily int getceldas\+\_\+negras (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del numero de celdas negras del kakuro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el numero de celdas negras del kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 146 of file Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_a519328ddfad2352c4ddcd609ed53b8a6}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!get\+Columnas@{get\+Columnas}}
+\index{get\+Columnas@{get\+Columnas}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{get\+Columnas()}
+{\footnotesize\ttfamily int get\+Columnas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del las columnas del kakuro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el numero de columnas del kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 98 of file Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_a9797970b65d6e75bb257187536d50715}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!get\+Filas@{get\+Filas}}
+\index{get\+Filas@{get\+Filas}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{get\+Filas()}
+{\footnotesize\ttfamily int get\+Filas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del las filas del kakuro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el numero de filas del kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 89 of file Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_a06c7f4b0dfa1850e3995751c257f5c79}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!get\+I\+D\+\_\+\+Kakuro@{get\+I\+D\+\_\+\+Kakuro}}
+\index{get\+I\+D\+\_\+\+Kakuro@{get\+I\+D\+\_\+\+Kakuro}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{get\+I\+D\+\_\+\+Kakuro()}
+{\footnotesize\ttfamily int get\+I\+D\+\_\+\+Kakuro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del Identificador del kakuro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Devuelve el ID del kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 116 of file Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_a0a6a4a20caa9f4f291f89d70e802f3d1}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!get\+Tablero@{get\+Tablero}}
+\index{get\+Tablero@{get\+Tablero}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{get\+Tablero()}
+{\footnotesize\ttfamily \textbf{ Casilla} [$\,$][$\,$] get\+Tablero (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del tablero del kakuro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Devuelve una matriz de casillas que representa el kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 107 of file Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_ab34b730a714826c508a11d9ac2d17bd7}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!set\+Blancas@{set\+Blancas}}
+\index{set\+Blancas@{set\+Blancas}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{set\+Blancas()}
+{\footnotesize\ttfamily void set\+Blancas (\begin{DoxyParamCaption}\item[{int}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifica el valor de celdas\+\_\+blancas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em b} & = nuevo valor de celdas\+\_\+blancas \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+celdas\+\_\+blancas = b 
+\end{DoxyPostcond}
+
+
+Definition at line 80 of file Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_kakuro_aa9b58618f7e49faf686d237993d30db3}} 
+\index{Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}!set\+I\+D\+\_\+\+Kakuro@{set\+I\+D\+\_\+\+Kakuro}}
+\index{set\+I\+D\+\_\+\+Kakuro@{set\+I\+D\+\_\+\+Kakuro}!Dominio\+::clases\+::\+Kakuro@{Dominio\+::clases\+::\+Kakuro}}
+\subsubsection{set\+I\+D\+\_\+\+Kakuro()}
+{\footnotesize\ttfamily void set\+I\+D\+\_\+\+Kakuro (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modificadora del ID de \doxyref{Kakuro}{p.}{class_dominio_1_1clases_1_1_kakuro}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & = nuevo identificador \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+ID modificado 
+\end{DoxyPostcond}
+
+
+Definition at line 123 of file Kakuro.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Dominio/clases/\textbf{ Kakuro.\+java}\end{DoxyCompactItemize}

@@ -1,0 +1,12 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$class_presentacion_1_1_vista_cargar_partida.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaPrincipal para Carg..." alt="" coords="131,5,274,32"/>
+<area shape="rect" id="node3" href="$class_presentacion_1_1_vista_crear_kakuro.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaPrincipal para Crea..." alt="" coords="135,56,271,83"/>
+<area shape="rect" id="node4" href="$class_presentacion_1_1_vista_kakuro.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaPrincipal para juga..." alt="" coords="152,107,253,133"/>
+<area shape="rect" id="node5" href="$class_presentacion_1_1_vista_login.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaGestionPerfil para ..." alt="" coords="157,157,248,184"/>
+<area shape="rect" id="node6" href="$class_presentacion_1_1_vista_menu_principal.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaPrincipal para most..." alt="" coords="129,208,276,235"/>
+<area shape="rect" id="node7" href="$class_presentacion_1_1_vista_nueva_partida.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaPrincipal para juga..." alt="" coords="131,259,274,285"/>
+<area shape="rect" id="node8" href="$class_presentacion_1_1_vista_partida.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaPrincipal para juga..." alt="" coords="153,309,253,336"/>
+<area shape="rect" id="node9" href="$class_presentacion_1_1_vista_ranking.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaPrincipal para cons..." alt="" coords="149,360,257,387"/>
+<area shape="rect" id="node10" href="$class_presentacion_1_1_vista_seleccionar_kakuro.html" title="Clase que extiende JPanel que inicializa, gestiona y modifica el panel de la VistaPrincipal para Sele..." alt="" coords="115,411,291,437"/>
+<area shape="rect" id="node11" href="$class_presentacion_1_1_vista_sign_up.html" title="VistaSignUp" alt="" coords="152,461,253,488"/>
+</map>

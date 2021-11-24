@@ -1,0 +1,4 @@
+<map id="CtrlCapaDominio" name="CtrlCapaDominio">
+<area shape="rect" id="node3" href="$class_dominio_1_1controladores_1_1_capa_dominio_kakuro.html" title="clase donde implementamos las funcionalidades principales del programa, siendo estas validar..." alt="" coords="5,184,161,211"/>
+<area shape="rect" id="node2" href="$class_persistencia_1_1_ctrl_persistencia.html" title="Clase que se encarga de recibir consultas y enviar datos a las demás capas de proyecto. éstas consultas las llevará a la clase indicada y devolverá su resultado. " alt="" coords="21,5,145,32"/>
+</map>

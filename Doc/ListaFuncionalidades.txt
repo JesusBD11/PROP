@@ -1,0 +1,14 @@
+LISTA DE LAS FUNCIONALIDADES IMPLEMENTADAS:
+Creación de Kakuro:
+	-Generar
+	-Validar
+Juego:
+	-Solucionar Kakuro en Juego
+	-guardar partida
+	-pausar partida
+	-validar movimiento (se produce cada vez que el usuario realiza un movimiento)
+Estadísticas:
+	-Ránking por usuario y puntuación acumulada
+Perfil de usuario:
+	-Inicio de sesión, registro y acceso como invitado usando el usuario default	
+	-cargar partida

@@ -1,0 +1,618 @@
+\section{Capa\+Dominio\+Kakuro Class Reference}
+\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro}\index{Capa\+Dominio\+Kakuro@{Capa\+Dominio\+Kakuro}}
+
+
+clase donde implementamos las funcionalidades principales del programa, siendo estas validar, generar y solucionar un Kakuro.  
+
+
+
+
+Inheritance diagram for Capa\+Dominio\+Kakuro\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{class_dominio_1_1controladores_1_1_capa_dominio_kakuro__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Capa\+Dominio\+Kakuro\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_dominio_1_1controladores_1_1_capa_dominio_kakuro__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Capa\+Dominio\+Kakuro} ()
+\begin{DoxyCompactList}\small\item\em Constructora de \doxyref{Capa\+Dominio\+Kakuro}{p.}{class_dominio_1_1controladores_1_1_capa_dominio_kakuro}. \end{DoxyCompactList}\item 
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a4a4657726813077ac245e9f5be0940c4}} 
+{\bfseries Capa\+Dominio\+Kakuro} (\textbf{ Ctrl\+Capa\+Dominio} c)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \textbf{ comprobar\+\_\+movimiento} (int i, int j, int v, \textbf{ Kakuro} k)
+\begin{DoxyCompactList}\small\item\em funcionalidad utilizada a la hora de jugar que comprueba la validez de un movimiento. \end{DoxyCompactList}\item 
+static boolean \textbf{ check\+Run} (int suma, int valor\+\_\+actual, boolean llena)
+\begin{DoxyCompactList}\small\item\em Comprueba la validez de una fila o columna con la sumatoria suma si se le añade el valor valor\+\_\+actual. \end{DoxyCompactList}\item 
+static void \textbf{ filtrar\+Sumas} (int max, int length, Set$<$ Integer $>$ possible)
+\begin{DoxyCompactList}\small\item\em filtra el conjunto de valores posibles de la celda para una fila o columna con sumatorias que solo admiten combinaciones determinadas de valores \end{DoxyCompactList}\item 
+static int \textbf{ take\+Fila} (\textbf{ Casilla}[$\,$][$\,$] state, int valor\+\_\+actual, int celdaf, int celdac, Set$<$ Integer $>$ possible)
+\begin{DoxyCompactList}\small\item\em comprueba las restricciones de fila de la casilla consultada en el solve. Ademas comprueba si la fila esta llena y filtra los valores posibles para esa fila. \end{DoxyCompactList}\item 
+static int \textbf{ take\+Columna} (\textbf{ Casilla}[$\,$][$\,$] state, int valor\+\_\+actual, int celdaf, int celdac, Set$<$ Integer $>$ possible)
+\begin{DoxyCompactList}\small\item\em comprueba las restricciones de columna de la casilla consultada en el solve. Ademas comprueba si la columna esta llena y filtra los valores posibles para esa columna. \end{DoxyCompactList}\item 
+static void \textbf{ calc\+Posiciones} (\textbf{ Kakuro} k, int startF, int startC, int[$\,$] fila, int[$\,$] columna)
+\begin{DoxyCompactList}\small\item\em Calcula y llena los vectores de enteros con los indices de todas las casillas blancas del kakuro k. \end{DoxyCompactList}\item 
+static boolean \textbf{ solve} (\textbf{ Kakuro} k, int opcion)
+\begin{DoxyCompactList}\small\item\em opcion = 0\+: comprueba que k tiene solucion y, de ser asi, la guarda en result opcion = 1\+: busca todas las posibles soluciones del Kakuro para comprobar si éste tiene 1 solución o más. \end{DoxyCompactList}\item 
+static boolean \textbf{ comprobar\+Solucion} (\textbf{ Kakuro} kakuro1)
+\begin{DoxyCompactList}\small\item\em comprueba que la solucion alcanzada despues de jugar un kakuro es valida \end{DoxyCompactList}\item 
+static \textbf{ Casilla} [$\,$][$\,$] \textbf{ generar\+Kakuro} (int n, int m, double dificultad)
+\begin{DoxyCompactList}\small\item\em Genera una matriz de casillas nueva que equivale a la de un kakuro valido. \end{DoxyCompactList}\item 
+static boolean \textbf{ generarK} (int n, int m, int negras, \textbf{ Casilla} [$\,$][$\,$]k)
+\begin{DoxyCompactList}\small\item\em funcionalidad de generar\+Kakuro encargada de generar la matriz de casillas \end{DoxyCompactList}\item 
+static void \textbf{ generar\+Sumas} (\textbf{ Casilla}[$\,$][$\,$] k)
+\begin{DoxyCompactList}\small\item\em funcionalidad de generarK encargada de generar las sumatorias de las filas y columnas \end{DoxyCompactList}\item 
+static boolean \textbf{ generar\+Casillas\+Blancas} (\textbf{ Casilla}[$\,$][$\,$] k)
+\begin{DoxyCompactList}\small\item\em funcionalidad de generarK encargada de generar las casillas blancas y colocarlas \end{DoxyCompactList}\item 
+static boolean \textbf{ valor\+Repetido} (\textbf{ Casilla} [$\,$][$\,$]k, int x, int y, int value)
+\begin{DoxyCompactList}\small\item\em Verifica que value en la coordenada (x,y) no esta repetido para la matriz de casillas. \end{DoxyCompactList}\item 
+static void \textbf{ generar\+Casillas\+Negras} (\textbf{ Casilla} [$\,$][$\,$]k, int n\+Casillas)
+\begin{DoxyCompactList}\small\item\em funcionalidad de generarK encargada de generar las casillas negras y colocarlas \end{DoxyCompactList}\item 
+static void \textbf{ print\+Cell\+Matrix} (\textbf{ Casilla} [$\,$][$\,$]k)
+\begin{DoxyCompactList}\small\item\em Muestra la matriz de casillas k por pantalla. \end{DoxyCompactList}\item 
+static void \textbf{ generar\+Resolver} (int dificultad)
+\begin{DoxyCompactList}\small\item\em segun una dificultad, generamos un kakuro y posteriormente llamamos a la funcion solve para que lo resuelva \end{DoxyCompactList}\item 
+static int \textbf{ generar} (int dificultad)
+\begin{DoxyCompactList}\small\item\em segun una dificultad, generamos un kakuro \end{DoxyCompactList}\item 
+static int \textbf{ generar} (int dimensiones, int num\+Casillas\+Negras)
+\begin{DoxyCompactList}\small\item\em segun unas dimensiones y el numero de casillas negras generamos un kakuro \end{DoxyCompactList}\item 
+static boolean \textbf{ validar\+\_\+kakuro} (\textbf{ Kakuro} k)
+\begin{DoxyCompactList}\small\item\em Dado un kakuro k, comprobamos que este sea valido. \end{DoxyCompactList}\item 
+static \textbf{ Casilla} [$\,$][$\,$] \textbf{ get\+Result} ()
+\begin{DoxyCompactList}\small\item\em devuelve el resultado de la solucion \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_ad9ea4c4f9de31b584323e8b5bf976782}} 
+static \textbf{ Ctrl\+Capa\+Dominio} {\bfseries ccd}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+clase donde implementamos las funcionalidades principales del programa, siendo estas validar, generar y solucionar un Kakuro. 
+
+Definition at line 30 of file Capa\+Dominio\+Kakuro.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a5f6806ade86e68be838f48b8db9ac68e}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!Capa\+Dominio\+Kakuro@{Capa\+Dominio\+Kakuro}}
+\index{Capa\+Dominio\+Kakuro@{Capa\+Dominio\+Kakuro}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{Capa\+Dominio\+Kakuro()}
+{\footnotesize\ttfamily \textbf{ Capa\+Dominio\+Kakuro} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructora de \doxyref{Capa\+Dominio\+Kakuro}{p.}{class_dominio_1_1controladores_1_1_capa_dominio_kakuro}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & = Controlador de capa de dominio con el que interactua la clase. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Existe una instancia nueva de \doxyref{Capa\+Dominio\+Kakuro}{p.}{class_dominio_1_1controladores_1_1_capa_dominio_kakuro} con el controlador de capa de dominio correspondiente. 
+\end{DoxyPostcond}
+
+
+Definition at line 44 of file Capa\+Dominio\+Kakuro.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_ac6661a567f7a67bfa3321fb59c65b640}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!calc\+Posiciones@{calc\+Posiciones}}
+\index{calc\+Posiciones@{calc\+Posiciones}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{calc\+Posiciones()}
+{\footnotesize\ttfamily static void calc\+Posiciones (\begin{DoxyParamCaption}\item[{\textbf{ Kakuro}}]{k,  }\item[{int}]{startF,  }\item[{int}]{startC,  }\item[{int [$\,$]}]{fila,  }\item[{int [$\,$]}]{columna }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Calcula y llena los vectores de enteros con los indices de todas las casillas blancas del kakuro k. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = kakuro a solucionar \\
+\hline
+{\em startF} & = fila en la que empieza \\
+\hline
+{\em startC} & = columna en la que empieza \\
+\hline
+{\em fila} & = indices de las casillas blancas (fila) \\
+\hline
+{\em columna} & = indices de las casillas blancas (columna) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+fila y columna contienen los indices de todas las casillas blancas del kakuro k 
+\end{DoxyPostcond}
+
+
+Definition at line 341 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a2154dd8ec0aa8c9d39bce1616c1b9ae5}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!check\+Run@{check\+Run}}
+\index{check\+Run@{check\+Run}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{check\+Run()}
+{\footnotesize\ttfamily static boolean check\+Run (\begin{DoxyParamCaption}\item[{int}]{suma,  }\item[{int}]{valor\+\_\+actual,  }\item[{boolean}]{llena }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Comprueba la validez de una fila o columna con la sumatoria suma si se le añade el valor valor\+\_\+actual. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em suma} & = sumatoria de los valores actuales de una fila o columna \\
+\hline
+{\em valor\+\_\+actual} & = valor a comprobar \\
+\hline
+{\em llena} & = indica si añadir valor\+\_\+actual llenaría la fila o columna con la sumatoria suma. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve cierto o falso dependiendo de la validez de valor\+\_\+actual respecto a la sumatoria suma y el parámetro llena. 
+\end{DoxyPostcond}
+
+
+Definition at line 141 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a01bf443d8d6a2bd070772109fe25ffcf}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!comprobar\+\_\+movimiento@{comprobar\+\_\+movimiento}}
+\index{comprobar\+\_\+movimiento@{comprobar\+\_\+movimiento}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{comprobar\+\_\+movimiento()}
+{\footnotesize\ttfamily static int comprobar\+\_\+movimiento (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{v,  }\item[{\textbf{ Kakuro}}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+funcionalidad utilizada a la hora de jugar que comprueba la validez de un movimiento. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & = fila a comprobar \\
+\hline
+{\em j} & = columna a comprobar \\
+\hline
+{\em v} & = valor a comprobar \\
+\hline
+{\em k} & = kakuro sobre el que realizar las comprobaciones \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+en caso de que el movimiento sea válido, devuelve 4 en caso de que el kakuro esté acabado y 5 en caso de que todavía queden casillas por rellenar. En caso de que el movimiento no sea válido, se devuelve un valor entero diferente dependiendo de la causa del error. 
+\end{DoxyPostcond}
+
+
+Definition at line 64 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a30b5ae4d45535e3b97546c12da259d1d}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!comprobar\+Solucion@{comprobar\+Solucion}}
+\index{comprobar\+Solucion@{comprobar\+Solucion}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{comprobar\+Solucion()}
+{\footnotesize\ttfamily static boolean comprobar\+Solucion (\begin{DoxyParamCaption}\item[{\textbf{ Kakuro}}]{kakuro1 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+comprueba que la solucion alcanzada despues de jugar un kakuro es valida 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = Kakuro a comprobar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve true o false dependiendo del resultado de la comprobacion 
+\end{DoxyPostcond}
+
+
+Definition at line 522 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a61789076d9e81b042aeda320dea5ed0a}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!filtrar\+Sumas@{filtrar\+Sumas}}
+\index{filtrar\+Sumas@{filtrar\+Sumas}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{filtrar\+Sumas()}
+{\footnotesize\ttfamily static void filtrar\+Sumas (\begin{DoxyParamCaption}\item[{int}]{max,  }\item[{int}]{length,  }\item[{Set$<$ Integer $>$}]{possible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+filtra el conjunto de valores posibles de la celda para una fila o columna con sumatorias que solo admiten combinaciones determinadas de valores 
+
+
+\begin{DoxyParams}{Parameters}
+{\em max} & = sumatoria de la fila o columna filtrada cuándo ésta esté completa. \\
+\hline
+{\em length} & = longitud de la fila o columna \\
+\hline
+{\em possible} & = conjunto con los valores posibles de la celda \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+possible contiene los valores posibles de la celda después de pasar por el filtro. 
+\end{DoxyPostcond}
+
+
+Definition at line 155 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_ae71822a6af198c33422fbff2aa2306d6}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!generar@{generar}}
+\index{generar@{generar}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{generar()\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int generar (\begin{DoxyParamCaption}\item[{int}]{dificultad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+segun una dificultad, generamos un kakuro 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dificultad} & = indicador de dificultad\+: 1-\/facil, 2-\/normal, 3-\/dificil \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+muestra el resultado por pantalla 
+\end{DoxyPostcond}
+
+
+Definition at line 960 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_adf703983e5f5b19ad570af6479a839ca}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!generar@{generar}}
+\index{generar@{generar}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{generar()\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int generar (\begin{DoxyParamCaption}\item[{int}]{dimensiones,  }\item[{int}]{num\+Casillas\+Negras }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+segun unas dimensiones y el numero de casillas negras generamos un kakuro 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dimensiones} & = dimensiones del kakuro en n$\ast$n \\
+\hline
+{\em num\+Casillas\+Negras} & = numero de casillas negras aproximadas que habra en el kakuro \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+muestra el resultado por pantalla 
+\end{DoxyPostcond}
+
+
+Definition at line 991 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a21ccb56d97ca51b2d3f1dc8c5dbd9f76}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!generar\+Casillas\+Blancas@{generar\+Casillas\+Blancas}}
+\index{generar\+Casillas\+Blancas@{generar\+Casillas\+Blancas}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{generar\+Casillas\+Blancas()}
+{\footnotesize\ttfamily static boolean generar\+Casillas\+Blancas (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{k[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+funcionalidad de generarK encargada de generar las casillas blancas y colocarlas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = matriz de casillas a rellenar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+k contiene el resultado de generar las casillas blancas ademas de lo que ya contenia 
+\end{DoxyPostcond}
+
+
+Definition at line 750 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a86d4d6e4b4dea0e9e165c3ef0dceff45}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!generar\+Casillas\+Negras@{generar\+Casillas\+Negras}}
+\index{generar\+Casillas\+Negras@{generar\+Casillas\+Negras}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{generar\+Casillas\+Negras()}
+{\footnotesize\ttfamily static void generar\+Casillas\+Negras (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{k[$\,$][$\,$],  }\item[{int}]{n\+Casillas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+funcionalidad de generarK encargada de generar las casillas negras y colocarlas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = matriz de casillas a rellenar \\
+\hline
+{\em n\+Casillas} & = numero de casillas negras a colocar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+k contiene el resultado de generar las casillas negras ademas de lo que ya contenia 
+\end{DoxyPostcond}
+
+
+Definition at line 866 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a68b9a3a4c10ccbe7e76b87f344b6cb9d}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!generarK@{generarK}}
+\index{generarK@{generarK}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{generar\+K()}
+{\footnotesize\ttfamily static boolean generarK (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{m,  }\item[{int}]{negras,  }\item[{\textbf{ Casilla}}]{k[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+funcionalidad de generar\+Kakuro encargada de generar la matriz de casillas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & = numero de filas \\
+\hline
+{\em m} & = numero de columnas \\
+\hline
+{\em negras} & = indicador de la cantidad de casillas negras necesarias. varia segun la dificultad pasada a generar\+Kakuro \\
+\hline
+{\em k} & = matriz de casillas a rellenar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve true en caso de generar una matriz de casillas validas y false en caso contrario. El resultado se guarda en k. 
+\end{DoxyPostcond}
+
+
+Definition at line 638 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a62f19d686f3705c06c06c415e45fa86c}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!generar\+Kakuro@{generar\+Kakuro}}
+\index{generar\+Kakuro@{generar\+Kakuro}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{generar\+Kakuro()}
+{\footnotesize\ttfamily static \textbf{ Casilla} [$\,$][$\,$] generar\+Kakuro (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{m,  }\item[{double}]{dificultad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Genera una matriz de casillas nueva que equivale a la de un kakuro valido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & = numero de filas \\
+\hline
+{\em m} & = numero de columnas \\
+\hline
+{\em dificultad} & = constante de dificultad \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve una matriz de casillas y la imprime por pantalla. 
+\end{DoxyPostcond}
+
+
+Definition at line 576 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a782e13a3261d2f5acc3134770e0d7313}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!generar\+Resolver@{generar\+Resolver}}
+\index{generar\+Resolver@{generar\+Resolver}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{generar\+Resolver()}
+{\footnotesize\ttfamily static void generar\+Resolver (\begin{DoxyParamCaption}\item[{int}]{dificultad }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+segun una dificultad, generamos un kakuro y posteriormente llamamos a la funcion solve para que lo resuelva 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dificultad} & = indicador de dificultad\+: 1-\/facil, 2-\/normal, 3-\/dificil \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+muestra el resultado por pantalla 
+\end{DoxyPostcond}
+
+
+Definition at line 926 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a62967677746621f98403942905a5d4f6}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!generar\+Sumas@{generar\+Sumas}}
+\index{generar\+Sumas@{generar\+Sumas}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{generar\+Sumas()}
+{\footnotesize\ttfamily static void generar\+Sumas (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{k[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+funcionalidad de generarK encargada de generar las sumatorias de las filas y columnas 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = matriz de casillas a rellenar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+k contiene el resultado de generar las sumatorias ademas de lo que ya contenia 
+\end{DoxyPostcond}
+
+
+Definition at line 698 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a2d097a8f34542ef704f6f7d97f02c21e}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!get\+Result@{get\+Result}}
+\index{get\+Result@{get\+Result}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{get\+Result()}
+{\footnotesize\ttfamily static \textbf{ Casilla} [$\,$][$\,$] get\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+devuelve el resultado de la solucion 
+
+\begin{DoxyReturn}{Returns}
+resultado del solver 
+\end{DoxyReturn}
+
+
+Definition at line 1066 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_aa003892c4fb18947436932d5fa50cc68}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!print\+Cell\+Matrix@{print\+Cell\+Matrix}}
+\index{print\+Cell\+Matrix@{print\+Cell\+Matrix}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{print\+Cell\+Matrix()}
+{\footnotesize\ttfamily static void print\+Cell\+Matrix (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{k[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Muestra la matriz de casillas k por pantalla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = matriz de casillas a imprimir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+-\/ 
+\end{DoxyPostcond}
+
+
+Definition at line 910 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_af6915b2c3ca7d305b01b6bb2003b2524}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!solve@{solve}}
+\index{solve@{solve}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{solve()}
+{\footnotesize\ttfamily static boolean solve (\begin{DoxyParamCaption}\item[{\textbf{ Kakuro}}]{k,  }\item[{int}]{opcion }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+opcion = 0\+: comprueba que k tiene solucion y, de ser asi, la guarda en result opcion = 1\+: busca todas las posibles soluciones del Kakuro para comprobar si éste tiene 1 solución o más. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = Kakuro a solucionar \\
+\hline
+{\em opcion} & = indica en que modo trabaja la funcion \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+opcion = 0\+: en caso de encontrar solución, guarda el resultado en result. En caso contrario se informará a la función que solicita la solución. opcion = 1\+: en caso de encontrar 1 solución, devuelve true indicando que el kakuro es válido. En caso contrario devuelve false. 
+\end{DoxyPostcond}
+
+
+Definition at line 461 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a72be71cfacc8d4eeb9d25930615c43f9}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!take\+Columna@{take\+Columna}}
+\index{take\+Columna@{take\+Columna}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{take\+Columna()}
+{\footnotesize\ttfamily static int take\+Columna (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{state[$\,$][$\,$],  }\item[{int}]{valor\+\_\+actual,  }\item[{int}]{celdaf,  }\item[{int}]{celdac,  }\item[{Set$<$ Integer $>$}]{possible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+comprueba las restricciones de columna de la casilla consultada en el solve. Ademas comprueba si la columna esta llena y filtra los valores posibles para esa columna. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & = estado actual de la matriz de casillas en el solve \\
+\hline
+{\em valor\+\_\+actual} & = valor a probar en el solver \\
+\hline
+{\em celdaf} & = fila en la que se encuentra la casilla consultada \\
+\hline
+{\em celdac} & = columna en la que se encuentra la casilla consultada \\
+\hline
+{\em possible} & = conjunto con los valores posibles de la casilla \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve el resultado de la comprobación, siendo este -\/1 en caso de valor repetido o (valor a alcanzar -\/ total de la columna) en cualquier otro. columnallena = true si la columna esta llena. también modificamos possible en caso de que sea necesario. 
+\end{DoxyPostcond}
+
+
+Definition at line 294 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a62631ad41366c9ead5347729d4adc719}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!take\+Fila@{take\+Fila}}
+\index{take\+Fila@{take\+Fila}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{take\+Fila()}
+{\footnotesize\ttfamily static int take\+Fila (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{state[$\,$][$\,$],  }\item[{int}]{valor\+\_\+actual,  }\item[{int}]{celdaf,  }\item[{int}]{celdac,  }\item[{Set$<$ Integer $>$}]{possible }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+comprueba las restricciones de fila de la casilla consultada en el solve. Ademas comprueba si la fila esta llena y filtra los valores posibles para esa fila. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & = estado actual de la matriz de casillas en el solve \\
+\hline
+{\em valor\+\_\+actual} & = valor a probar en el solver \\
+\hline
+{\em celdaf} & = fila en la que se encuentra la casilla consultada \\
+\hline
+{\em celdac} & = columna en la que se encuentra la casilla consultada \\
+\hline
+{\em possible} & = conjunto con los valores posibles de la casilla \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve el resultado de la comprobación, siendo este -\/1 en caso de valor repetido o (valor a alcanzar -\/ total de la fila) en cualquier otro. filallena = true si la columna esta llena. también modificamos possible en caso de que sea necesario. 
+\end{DoxyPostcond}
+
+
+Definition at line 243 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a76e1610d52ef8e18aed847309acdf302}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!validar\+\_\+kakuro@{validar\+\_\+kakuro}}
+\index{validar\+\_\+kakuro@{validar\+\_\+kakuro}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{validar\+\_\+kakuro()}
+{\footnotesize\ttfamily static boolean validar\+\_\+kakuro (\begin{DoxyParamCaption}\item[{\textbf{ Kakuro}}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Dado un kakuro k, comprobamos que este sea valido. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = kakuro a validar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve true en caso de que el kakuro sea valido y devuelve false en caso contrario 
+\end{DoxyPostcond}
+
+
+Definition at line 1008 of file Capa\+Dominio\+Kakuro.\+java.
+
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_kakuro_a9017670bc039561e57651b50c6203943}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}!valor\+Repetido@{valor\+Repetido}}
+\index{valor\+Repetido@{valor\+Repetido}!Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro@{Dominio\+::controladores\+::\+Capa\+Dominio\+Kakuro}}
+\subsubsection{valor\+Repetido()}
+{\footnotesize\ttfamily static boolean valor\+Repetido (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{k[$\,$][$\,$],  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Verifica que value en la coordenada (x,y) no esta repetido para la matriz de casillas. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = matriz de casillas a comprobar \\
+\hline
+{\em x} & = fila en la que se situa la casilla \\
+\hline
+{\em y} & = columna en la que se situa la casilla \\
+\hline
+{\em value} & = valor a comprobar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+en caso de no estar repetido devuelve true, en caso contrario devuelve false. 
+\end{DoxyPostcond}
+
+
+Definition at line 793 of file Capa\+Dominio\+Kakuro.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Dominio/controladores/\textbf{ Capa\+Dominio\+Kakuro.\+java}\end{DoxyCompactItemize}

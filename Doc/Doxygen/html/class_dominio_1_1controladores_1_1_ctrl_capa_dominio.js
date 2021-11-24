@@ -1,0 +1,25 @@
+var class_dominio_1_1controladores_1_1_ctrl_capa_dominio =
+[
+    [ "CtrlCapaDominio", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a61d89e049d057d28ce0a8d9adbf45e90", null ],
+    [ "addkakuro", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a6953d179f5f27e8d94c6dfb6d9b1a663", null ],
+    [ "anadir_usuario", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a5c5e5b25f6e13bcff9a5db7afd8798d3", null ],
+    [ "cargar_partida", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#ab6c07eaf528a5ad487369a7561766057", null ],
+    [ "CargarIDs", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a1da2be254d68f7c913ca7b872ffa3af2", null ],
+    [ "comprobar", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a1e108c711ab803c873740074187ffc25", null ],
+    [ "comprobarMovimiento", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a6f44b9ac88eba045ce4c5ad6bb03e435", null ],
+    [ "generarKakuro", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a4e42ae85a1df8f7e0c667ab371e0a6f5", null ],
+    [ "generarKakuro", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a67572196715612e05554990a74b06bf4", null ],
+    [ "generarKakuroManual", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a95df7bb86f38a4123b7caf44b60afef1", null ],
+    [ "get_lista_kakuro", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a45ebd0e10cf0731cbd580006a2b9e365", null ],
+    [ "getKakuroDePartida", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a14997dd10ecf7cf3cc5fbf85517abc65", null ],
+    [ "getkakuroenjuego", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a6a6d6fda88d7f224cac678d508f5c2a2", null ],
+    [ "getTimeDePartida", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a53f375f5796ebbe633b7a8e379580d6b", null ],
+    [ "guardar_partida", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a0f167cb1bb1f92b4725dcd5a9af468bf", null ],
+    [ "LogIn", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#ad57530714d88f506d201d718395cf577", null ],
+    [ "read_kakuro_file", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a4bdff244696da8d226b4072f7982fd01", null ],
+    [ "setMap", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#aa942c39a62e33ba7f787f59bc6a319e5", null ],
+    [ "ShowRanking", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#ab7e52763589137009b637fef9ff3ae5c", null ],
+    [ "ShowSolution", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a0202eee84aef9c8c3e58042fb477600e", null ],
+    [ "SignUp", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a8a4e10e8094cac30e3c5536b3a2364ae", null ],
+    [ "updateRanking", "class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a2755141534bc4e22d056f09dc68880f5", null ]
+];

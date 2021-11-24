@@ -1,0 +1,243 @@
+\section{Ctrl\+Persistencia Class Reference}
+\label{class_persistencia_1_1_ctrl_persistencia}\index{Ctrl\+Persistencia@{Ctrl\+Persistencia}}
+
+
+Clase que se encarga de recibir consultas y enviar datos a las demás capas de proyecto. éstas consultas las llevará a la clase indicada y devolverá su resultado.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Ctrl\+Persistencia} ()
+\begin{DoxyCompactList}\small\item\em Creadora de \doxyref{Ctrl\+Persistencia}{p.}{class_persistencia_1_1_ctrl_persistencia}. \end{DoxyCompactList}\item 
+Hash\+Map$<$ String, String $>$ \textbf{ get\+Registro} ()
+\begin{DoxyCompactList}\small\item\em Pide al controlador de persistencia de Registro que busque los datos de registro para pasarlos a la capa de dominio. \end{DoxyCompactList}\item 
+void \textbf{ set\+Registro} (Hash\+Map$<$ String, String $>$ r)
+\begin{DoxyCompactList}\small\item\em Pide al controlador de persistencia de Registro que actualice los datos de registro de Usuarios de la aplicacion. \end{DoxyCompactList}\item 
+Hash\+Map$<$ String, Double $>$ \textbf{ get\+Ranking} ()
+\begin{DoxyCompactList}\small\item\em Pide al controlador de persistencia de Ranking que devuelva el mapa con la información del ranking guardado en persistencia. \end{DoxyCompactList}\item 
+void \textbf{ set\+Ranking} (Hash\+Map$<$ String, Double $>$ r)
+\begin{DoxyCompactList}\small\item\em Se pide al controlador de persistencia de ranking que cambie el ranking de la carpeta de persistencia por el mapa pasado por parámetro. \end{DoxyCompactList}\item 
+String [$\,$] \textbf{ getlista\+Kakuro} ()
+\begin{DoxyCompactList}\small\item\em Se pide al controlador de persistencia de Kakuros que busque todos los Ids de los kakuros guardados. \end{DoxyCompactList}\item 
+int \textbf{ anadir\+\_\+kakuro} (\textbf{ Casilla} [$\,$][$\,$] k)
+\begin{DoxyCompactList}\small\item\em Se pide al controlador de persistencia de Kakuros que añade un kakuro a la biblioteca en formato .txt. \end{DoxyCompactList}\item 
+\textbf{ Kakuro} \textbf{ read\+\_\+kakuro\+\_\+file} (int id, int option)
+\begin{DoxyCompactList}\small\item\em Se pide al controlador de persistencia de Kakuros que Lea un kakuro desde un archivo .txt. \end{DoxyCompactList}\item 
+Hash\+Map$<$ String, Array\+List$<$ \textbf{ partida} $>$ $>$ \textbf{ get\+Map} ()
+\begin{DoxyCompactList}\small\item\em Se pide al controlador de persistencia de partida que devuelva el mapa con la información de todas las partidas guardadas del programa. \end{DoxyCompactList}\item 
+void \textbf{ set\+Map} (Hash\+Map$<$ String, Array\+List$<$ \textbf{ partida} $>$$>$ p)
+\begin{DoxyCompactList}\small\item\em Se pide al controlador de persistencia de partida que actualice la información de todas las partidas guardadas del programa con el mapa pasado por parámetro. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que se encarga de recibir consultas y enviar datos a las demás capas de proyecto. éstas consultas las llevará a la clase indicada y devolverá su resultado. 
+
+Definition at line 28 of file Ctrl\+Persistencia.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_a96f0b5f588619a462435761469cc8111}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!Ctrl\+Persistencia@{Ctrl\+Persistencia}}
+\index{Ctrl\+Persistencia@{Ctrl\+Persistencia}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{Ctrl\+Persistencia()}
+{\footnotesize\ttfamily \textbf{ Ctrl\+Persistencia} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creadora de \doxyref{Ctrl\+Persistencia}{p.}{class_persistencia_1_1_ctrl_persistencia}. 
+
+\begin{DoxyPostcond}{Postcondition}
+Crea una instancia de \doxyref{Ctrl\+Persistencia}{p.}{class_persistencia_1_1_ctrl_persistencia} y de todos los controladores de persistencia que éste utiliza para guardar y cargar datos. 
+\end{DoxyPostcond}
+
+
+Definition at line 42 of file Ctrl\+Persistencia.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_a69f07b48905d166947f25f265ccecd41}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!anadir\+\_\+kakuro@{anadir\+\_\+kakuro}}
+\index{anadir\+\_\+kakuro@{anadir\+\_\+kakuro}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{anadir\+\_\+kakuro()}
+{\footnotesize\ttfamily int anadir\+\_\+kakuro (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{k[$\,$][$\,$] }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se pide al controlador de persistencia de Kakuros que añade un kakuro a la biblioteca en formato .txt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = Es el tablero del kakuro que se quiere guardar\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve el Id con el que se ha guardado el Kakuro 
+\end{DoxyPostcond}
+
+
+Definition at line 117 of file Ctrl\+Persistencia.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_a94037781bc042a72ceb6e6861acffa6b}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!getlista\+Kakuro@{getlista\+Kakuro}}
+\index{getlista\+Kakuro@{getlista\+Kakuro}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{getlista\+Kakuro()}
+{\footnotesize\ttfamily String [$\,$] getlista\+Kakuro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se pide al controlador de persistencia de Kakuros que busque todos los Ids de los kakuros guardados. 
+
+\begin{DoxyPostcond}{Postcondition}
+almacena los Ids en vector de Strings y lo devuelve 
+\end{DoxyPostcond}
+
+
+Definition at line 102 of file Ctrl\+Persistencia.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_aa0df641492ca469159123d011c32f943}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!get\+Map@{get\+Map}}
+\index{get\+Map@{get\+Map}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{get\+Map()}
+{\footnotesize\ttfamily Hash\+Map$<$String,Array\+List$<$\textbf{ partida}$>$ $>$ get\+Map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se pide al controlador de persistencia de partida que devuelva el mapa con la información de todas las partidas guardadas del programa. 
+
+\begin{DoxyPostcond}{Postcondition}
+se devuelve el mapa con la información de las partidas del programa. 
+\end{DoxyPostcond}
+
+
+Definition at line 143 of file Ctrl\+Persistencia.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_a36614c43a922835e5acc1defdc74de37}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!get\+Ranking@{get\+Ranking}}
+\index{get\+Ranking@{get\+Ranking}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{get\+Ranking()}
+{\footnotesize\ttfamily Hash\+Map$<$String, Double$>$ get\+Ranking (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pide al controlador de persistencia de Ranking que devuelva el mapa con la información del ranking guardado en persistencia. 
+
+\begin{DoxyPostcond}{Postcondition}
+Se devuelve el ranking guardado en persistencia. 
+\end{DoxyPostcond}
+
+
+Definition at line 79 of file Ctrl\+Persistencia.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_aebc53c1ebcf1ed423346079497617b41}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!get\+Registro@{get\+Registro}}
+\index{get\+Registro@{get\+Registro}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{get\+Registro()}
+{\footnotesize\ttfamily Hash\+Map$<$String, String$>$ get\+Registro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pide al controlador de persistencia de Registro que busque los datos de registro para pasarlos a la capa de dominio. 
+
+\begin{DoxyPostcond}{Postcondition}
+devuelve un Hash\+Map con todos los datos de resgistro 
+\end{DoxyPostcond}
+
+
+Definition at line 57 of file Ctrl\+Persistencia.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_a5b376dcb8af70cf755d305b38f65fab9}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!read\+\_\+kakuro\+\_\+file@{read\+\_\+kakuro\+\_\+file}}
+\index{read\+\_\+kakuro\+\_\+file@{read\+\_\+kakuro\+\_\+file}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{read\+\_\+kakuro\+\_\+file()}
+{\footnotesize\ttfamily \textbf{ Kakuro} read\+\_\+kakuro\+\_\+file (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{int}]{option }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se pide al controlador de persistencia de Kakuros que Lea un kakuro desde un archivo .txt. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & = es el Id del kakuro que queremos leer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+devuelve el Kakuro correspondiente al id en caso de que exista. 
+\end{DoxyPostcond}
+
+
+Definition at line 131 of file Ctrl\+Persistencia.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_a484176b586c42b4b85332c83b3e4af8d}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!set\+Map@{set\+Map}}
+\index{set\+Map@{set\+Map}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{set\+Map()}
+{\footnotesize\ttfamily void set\+Map (\begin{DoxyParamCaption}\item[{Hash\+Map$<$ String, Array\+List$<$ \textbf{ partida} $>$$>$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se pide al controlador de persistencia de partida que actualice la información de todas las partidas guardadas del programa con el mapa pasado por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & = mapa con la información que se usará para actualizar la base de datos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+tenemos actualizada la información de persistencia correspondiente a las partidas guardadas por usuarios. 
+\end{DoxyPostcond}
+
+
+Definition at line 152 of file Ctrl\+Persistencia.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_af2d093faca5520f817903198096cf7c4}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!set\+Ranking@{set\+Ranking}}
+\index{set\+Ranking@{set\+Ranking}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{set\+Ranking()}
+{\footnotesize\ttfamily void set\+Ranking (\begin{DoxyParamCaption}\item[{Hash\+Map$<$ String, Double $>$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Se pide al controlador de persistencia de ranking que cambie el ranking de la carpeta de persistencia por el mapa pasado por parámetro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rank} & = ranking a guardar en persistencia \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+El ranking de persistencia pasa a ser rank. 
+\end{DoxyPostcond}
+
+
+Definition at line 88 of file Ctrl\+Persistencia.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_persistencia_a8260a7ec26ce8d5306e4b5bd3598473d}} 
+\index{Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}!set\+Registro@{set\+Registro}}
+\index{set\+Registro@{set\+Registro}!Persistencia\+::\+Ctrl\+Persistencia@{Persistencia\+::\+Ctrl\+Persistencia}}
+\subsubsection{set\+Registro()}
+{\footnotesize\ttfamily void set\+Registro (\begin{DoxyParamCaption}\item[{Hash\+Map$<$ String, String $>$}]{r }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pide al controlador de persistencia de Registro que actualice los datos de registro de Usuarios de la aplicacion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & = guarda los datos de los Usuarios\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se guardaran los datos de p en un txt 
+\end{DoxyPostcond}
+
+
+Definition at line 69 of file Ctrl\+Persistencia.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Persistencia/\textbf{ Ctrl\+Persistencia.\+java}\end{DoxyCompactItemize}

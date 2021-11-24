@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['setblancas',['setBlancas',['../class_dominio_1_1clases_1_1_kakuro.html#ab34b730a714826c508a11d9ac2d17bd7',1,'Dominio::clases::Kakuro']]],
+  ['sethorizontal',['setHorizontal',['../class_dominio_1_1clases_1_1_casilla.html#aa13c72fa2f4ed3ee3abc1fa8fbb375d3',1,'Dominio::clases::Casilla']]],
+  ['setid_5fkakuro',['setID_Kakuro',['../class_dominio_1_1clases_1_1_kakuro.html#aa9b58618f7e49faf686d237993d30db3',1,'Dominio::clases::Kakuro']]],
+  ['setmap',['setMap',['../class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#aa942c39a62e33ba7f787f59bc6a319e5',1,'Dominio.controladores.CtrlCapaDominio.setMap()'],['../class_persistencia_1_1_ctrl_partida.html#ab0a0ddcd86873329da6956c7faadf5a5',1,'Persistencia.CtrlPartida.setMap()'],['../class_persistencia_1_1_ctrl_persistencia.html#a484176b586c42b4b85332c83b3e4af8d',1,'Persistencia.CtrlPersistencia.setMap()']]],
+  ['setranking',['setRanking',['../class_persistencia_1_1_ctrl_persistencia.html#af2d093faca5520f817903198096cf7c4',1,'Persistencia.CtrlPersistencia.setRanking()'],['../class_persistencia_1_1_ctrl_ranking.html#a4948ef3ec21449c6cb7d0e9d5e6ec8fa',1,'Persistencia.CtrlRanking.setRanking()']]],
+  ['setregistro',['setRegistro',['../class_persistencia_1_1_ctrl_persistencia.html#a8260a7ec26ce8d5306e4b5bd3598473d',1,'Persistencia::CtrlPersistencia']]],
+  ['settipo',['setTipo',['../class_dominio_1_1clases_1_1_casilla.html#ad835c28dba2b7ebbf9c95fd81a3700ca',1,'Dominio::clases::Casilla']]],
+  ['setvalor',['setValor',['../class_dominio_1_1clases_1_1_casilla.html#a9f88bf1a462e0301c0a78e3c40baaa91',1,'Dominio::clases::Casilla']]],
+  ['setvaloraux',['setValorAux',['../class_dominio_1_1clases_1_1_casilla.html#a57cc2f2b320fee75228671b47bd2c6c9',1,'Dominio::clases::Casilla']]],
+  ['setvertical',['setVertical',['../class_dominio_1_1clases_1_1_casilla.html#a1c8dfaea880d06c914d02858a3d9a8c2',1,'Dominio::clases::Casilla']]],
+  ['setx',['setX',['../class_dominio_1_1clases_1_1_casilla.html#add2578ea6b65ad27a905a6d2048748bb',1,'Dominio::clases::Casilla']]],
+  ['sety',['setY',['../class_dominio_1_1clases_1_1_casilla.html#adea78a9ff1234e75627dda61d972213b',1,'Dominio::clases::Casilla']]],
+  ['showranking',['ShowRanking',['../class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#ab7e52763589137009b637fef9ff3ae5c',1,'Dominio::controladores::CtrlCapaDominio']]],
+  ['showsolution',['ShowSolution',['../class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a0202eee84aef9c8c3e58042fb477600e',1,'Dominio::controladores::CtrlCapaDominio']]],
+  ['signup',['SignUp',['../class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html#a8a4e10e8094cac30e3c5536b3a2364ae',1,'Dominio::controladores::CtrlCapaDominio']]],
+  ['solve',['solve',['../class_dominio_1_1controladores_1_1_capa_dominio_kakuro.html#af6915b2c3ca7d305b01b6bb2003b2524',1,'Dominio::controladores::CapaDominioKakuro']]]
+];

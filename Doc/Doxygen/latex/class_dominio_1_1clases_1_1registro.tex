@@ -1,0 +1,88 @@
+\section{registro Class Reference}
+\label{class_dominio_1_1clases_1_1registro}\index{registro@{registro}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ registro} ()
+\begin{DoxyCompactList}\small\item\em Creadora de registro. \end{DoxyCompactList}\item 
+void \textbf{ nuevo\+\_\+usuario} (String Usuario, String Password)
+\begin{DoxyCompactList}\small\item\em Recibe los datos de un Usuario que debe añadir a Datos\+Users. \end{DoxyCompactList}\item 
+void \textbf{ escribir\+\_\+map} ()
+\item 
+boolean \textbf{ comprobar} (int n, String Usuario, String Password)
+\begin{DoxyCompactList}\small\item\em Comrpueba si el Usuario que pretende hacer inicio de sesion, ha introcucido sus datos correctamente. En el caso que quiera regsitrarse, comprobará que el nombre de Usuario que elija no exista. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_dominio_1_1clases_1_1registro_ab434f6ce08eaf748ae10d7991149e7dd}} 
+\index{Dominio\+::clases\+::registro@{Dominio\+::clases\+::registro}!registro@{registro}}
+\index{registro@{registro}!Dominio\+::clases\+::registro@{Dominio\+::clases\+::registro}}
+\subsubsection{registro()}
+{\footnotesize\ttfamily \textbf{ registro} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creadora de registro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Crea una instancia de registro y carga los usuarios en el atributo Datos\+Users. El atributo Contenido se inicializa vacio 
+\end{DoxyPostcond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_dominio_1_1clases_1_1registro_a1e108c711ab803c873740074187ffc25}} 
+\index{Dominio\+::clases\+::registro@{Dominio\+::clases\+::registro}!comprobar@{comprobar}}
+\index{comprobar@{comprobar}!Dominio\+::clases\+::registro@{Dominio\+::clases\+::registro}}
+\subsubsection{comprobar()}
+{\footnotesize\ttfamily boolean comprobar (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{String}]{Usuario,  }\item[{String}]{Password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Comrpueba si el Usuario que pretende hacer inicio de sesion, ha introcucido sus datos correctamente. En el caso que quiera regsitrarse, comprobará que el nombre de Usuario que elija no exista. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em n} & = Paámetro que determina si hara una funcionalidad u otra. \\
+\hline
+{\em Usuario} & = Es el nombre de usuario que ha elegido para el registro o con el que quiere iniciar sesion \\
+\hline
+{\em Password} & = Es la contraseña que el usuario ha elegido para el registro o con la que quiere iniciar sesion\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se añade un nuevo Usuario a Datos\+Users con \char`\"{}\+Usuario\char`\"{} y \char`\"{}\+Password\char`\"{} 
+\end{DoxyPostcond}
+\mbox{\label{class_dominio_1_1clases_1_1registro_a0f113ff0fbcd7aad50e7ef8b4441816d}} 
+\index{Dominio\+::clases\+::registro@{Dominio\+::clases\+::registro}!escribir\+\_\+map@{escribir\+\_\+map}}
+\index{escribir\+\_\+map@{escribir\+\_\+map}!Dominio\+::clases\+::registro@{Dominio\+::clases\+::registro}}
+\subsubsection{escribir\+\_\+map()}
+{\footnotesize\ttfamily void escribir\+\_\+map (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\begin{DoxyPostcond}{Postcondition}
+Se ecribe por pantalla todos los Usuarios registrados 
+\end{DoxyPostcond}
+\mbox{\label{class_dominio_1_1clases_1_1registro_ac783afd6cdbd7ecadd753d6663fd2144}} 
+\index{Dominio\+::clases\+::registro@{Dominio\+::clases\+::registro}!nuevo\+\_\+usuario@{nuevo\+\_\+usuario}}
+\index{nuevo\+\_\+usuario@{nuevo\+\_\+usuario}!Dominio\+::clases\+::registro@{Dominio\+::clases\+::registro}}
+\subsubsection{nuevo\+\_\+usuario()}
+{\footnotesize\ttfamily void nuevo\+\_\+usuario (\begin{DoxyParamCaption}\item[{String}]{Usuario,  }\item[{String}]{Password }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Recibe los datos de un Usuario que debe añadir a Datos\+Users. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Usuario} & = Es el nombre de usuario que ha elegido para el registro \\
+\hline
+{\em Password} & = Es la contraseña que el usuario ha elegido para el registro\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Se añade un nuevo Usuario a Datos\+Users con \char`\"{}\+Usuario\char`\"{} y \char`\"{}\+Password\char`\"{} 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Dominio/clases/registro.\+java\end{DoxyCompactItemize}

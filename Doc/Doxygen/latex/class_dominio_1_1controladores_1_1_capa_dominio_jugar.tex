@@ -1,0 +1,85 @@
+\section{Capa\+Dominio\+Jugar Class Reference}
+\label{class_dominio_1_1controladores_1_1_capa_dominio_jugar}\index{Capa\+Dominio\+Jugar@{Capa\+Dominio\+Jugar}}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \textbf{ iniciar\+Dominio\+Jugar} (int ID)
+\begin{DoxyCompactList}\small\item\em inicializa el juego \end{DoxyCompactList}\item 
+static void \textbf{ jugar\+\_\+partida} (\textbf{ Kakuro} k)
+\begin{DoxyCompactList}\small\item\em Solicita el movimiento a realizar al usuario y comprueba su validez. \end{DoxyCompactList}\item 
+static boolean \textbf{ comprobar\+\_\+movimiento} (int i, int j, int v, \textbf{ Kakuro} k)
+\begin{DoxyCompactList}\small\item\em funcionalidad de jugar\+\_\+partida que comprueba la validez de un movimiento y modifica el kakuro en caso de que sea necesario \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+perem 
+\end{DoxyAuthor}
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_jugar_a5a830c6810618f6d7a89a6c288e668d4}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar@{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar}!comprobar\+\_\+movimiento@{comprobar\+\_\+movimiento}}
+\index{comprobar\+\_\+movimiento@{comprobar\+\_\+movimiento}!Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar@{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar}}
+\subsubsection{comprobar\+\_\+movimiento()}
+{\footnotesize\ttfamily static boolean comprobar\+\_\+movimiento (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j,  }\item[{int}]{v,  }\item[{\textbf{ Kakuro}}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+funcionalidad de jugar\+\_\+partida que comprueba la validez de un movimiento y modifica el kakuro en caso de que sea necesario 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i} & = fila a comprobar \\
+\hline
+{\em j} & = columna a comprobar \\
+\hline
+{\em v} & = valor a comprobar \\
+\hline
+{\em k} & = kakuro sobre el que realizar las comprobaciones y modifica en caso de que sea necesario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+si el movimiento es valido, k contiene el nuevo movimiento. En caso contrario se informa al usuario por pantalla 
+\end{DoxyPostcond}
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_jugar_a5d9f3f7da77bc30df191f30a51757ad8}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar@{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar}!iniciar\+Dominio\+Jugar@{iniciar\+Dominio\+Jugar}}
+\index{iniciar\+Dominio\+Jugar@{iniciar\+Dominio\+Jugar}!Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar@{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar}}
+\subsubsection{iniciar\+Dominio\+Jugar()}
+{\footnotesize\ttfamily static void iniciar\+Dominio\+Jugar (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+inicializa el juego 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & = kakuro a jugar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Empieza el juego entre un usuario y el kakuro con identificador ID 
+\end{DoxyPostcond}
+\mbox{\label{class_dominio_1_1controladores_1_1_capa_dominio_jugar_a7aeb1cb8a5b4d9f59ce79522d8f803ae}} 
+\index{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar@{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar}!jugar\+\_\+partida@{jugar\+\_\+partida}}
+\index{jugar\+\_\+partida@{jugar\+\_\+partida}!Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar@{Dominio\+::controladores\+::\+Capa\+Dominio\+Jugar}}
+\subsubsection{jugar\+\_\+partida()}
+{\footnotesize\ttfamily static void jugar\+\_\+partida (\begin{DoxyParamCaption}\item[{\textbf{ Kakuro}}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Solicita el movimiento a realizar al usuario y comprueba su validez. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & = kakuro a jugar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+En caso de que el movimiento sea valido, k es modificado con el nuevo movimiento incluido. En caso contrario se informara el usuario cuando el juego acabe se mostrara por pantalla el resultado 
+\end{DoxyPostcond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Dominio/controladores/Capa\+Dominio\+Jugar.\+java\end{DoxyCompactItemize}

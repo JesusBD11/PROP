@@ -1,0 +1,451 @@
+\section{Casilla Class Reference}
+\label{class_dominio_1_1clases_1_1_casilla}\index{Casilla@{Casilla}}
+
+
+Clase que representa una \doxyref{Casilla}{p.}{class_dominio_1_1clases_1_1_casilla} de un tablero de un \doxyref{Kakuro}{p.}{class_dominio_1_1clases_1_1_kakuro}.  
+
+
+
+
+Inheritance diagram for Casilla\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_dominio_1_1clases_1_1_casilla__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Casilla\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{class_dominio_1_1clases_1_1_casilla__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries Tipo}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Casilla} ()
+\begin{DoxyCompactList}\small\item\em Inicializa los atributos de la casilla. \end{DoxyCompactList}\item 
+\textbf{ Casilla} (\textbf{ Casilla} c)
+\begin{DoxyCompactList}\small\item\em Inicializa los atributos de esta casilla con los atributos de la casilla pasada como parametro. \end{DoxyCompactList}\item 
+\textbf{ Casilla} (boolean t, boolean h, boolean v, int val, int val\+Aux)
+\begin{DoxyCompactList}\small\item\em Inicializa los atributos de esta casilla con los atributos pasados como parametro. \end{DoxyCompactList}\item 
+void \textbf{ set\+Tipo} (boolean t)
+\begin{DoxyCompactList}\small\item\em Modifica el tipo de la casilla. \end{DoxyCompactList}\item 
+void \textbf{ set\+Horizontal} (boolean h)
+\begin{DoxyCompactList}\small\item\em Modifica el booleano horizontal de la casilla. \end{DoxyCompactList}\item 
+void \textbf{ set\+Vertical} (boolean v)
+\begin{DoxyCompactList}\small\item\em Modifica el booleano vertical de la casilla. \end{DoxyCompactList}\item 
+void \textbf{ set\+Valor} (int val)
+\begin{DoxyCompactList}\small\item\em Modifica el valor de la casilla. \end{DoxyCompactList}\item 
+void \textbf{ set\+Valor\+Aux} (int val)
+\begin{DoxyCompactList}\small\item\em Modifica el valor auxiliar de la casilla. \end{DoxyCompactList}\item 
+void \textbf{ setX} (int x)
+\begin{DoxyCompactList}\small\item\em Modifica el atributo X de la casilla. \end{DoxyCompactList}\item 
+void \textbf{ setY} (int y)
+\begin{DoxyCompactList}\small\item\em Modifica el atributo Y de la casilla. \end{DoxyCompactList}\item 
+boolean \textbf{ get\+Tipo} ()
+\begin{DoxyCompactList}\small\item\em Consultora del tipo de la casilla. \end{DoxyCompactList}\item 
+int \textbf{ get\+Valor} ()
+\begin{DoxyCompactList}\small\item\em Consultora del valor de la casilla. \end{DoxyCompactList}\item 
+int \textbf{ get\+Valor\+Aux} ()
+\begin{DoxyCompactList}\small\item\em Consultora del valor auxiliar de la casilla. \end{DoxyCompactList}\item 
+boolean \textbf{ get\+Horizontal} ()
+\begin{DoxyCompactList}\small\item\em Consultora del valor horizontal de la casilla. \end{DoxyCompactList}\item 
+boolean \textbf{ get\+Vertical} ()
+\begin{DoxyCompactList}\small\item\em Consultora del valor vertical de la casilla. \end{DoxyCompactList}\item 
+int \textbf{ getY} ()
+\begin{DoxyCompactList}\small\item\em Consultora del valor Y de la casilla. \end{DoxyCompactList}\item 
+int \textbf{ getX} ()
+\begin{DoxyCompactList}\small\item\em Consultora del valor X de la casilla. \end{DoxyCompactList}\item 
+String \textbf{ to\+String} ()
+\begin{DoxyCompactList}\small\item\em Transforma la casilla al formato del kakuro. \end{DoxyCompactList}\item 
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a36f9d82eba263d6a45140376547ca204}} 
+\textbf{ Casilla} {\bfseries from\+String} (String cell)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que representa una \doxyref{Casilla}{p.}{class_dominio_1_1clases_1_1_casilla} de un tablero de un \doxyref{Kakuro}{p.}{class_dominio_1_1clases_1_1_kakuro}. 
+
+Definition at line 23 of file Casilla.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_aa4cf4820a1813678fb1900d88331171f}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!Casilla@{Casilla}}
+\index{Casilla@{Casilla}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{Casilla()\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \textbf{ Casilla} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicializa los atributos de la casilla. 
+
+\begin{DoxyPostcond}{Postcondition}
+tipo=Blanca, horizontal y vertical = false, valor y valor\+Aux = 0. 
+\end{DoxyPostcond}
+
+
+Definition at line 42 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a2e4c39cd56901d7e8253d11e02d7d911}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!Casilla@{Casilla}}
+\index{Casilla@{Casilla}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{Casilla()\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily \textbf{ Casilla} (\begin{DoxyParamCaption}\item[{\textbf{ Casilla}}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicializa los atributos de esta casilla con los atributos de la casilla pasada como parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c} & = Una casilla no nula \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casilla actual es una copia de la casilla pasada como parametro 
+\end{DoxyPostcond}
+
+
+Definition at line 54 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a6672cb0d1efd09434610eb26ddd38c58}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!Casilla@{Casilla}}
+\index{Casilla@{Casilla}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{Casilla()\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily \textbf{ Casilla} (\begin{DoxyParamCaption}\item[{boolean}]{t,  }\item[{boolean}]{h,  }\item[{boolean}]{v,  }\item[{int}]{val,  }\item[{int}]{val\+Aux }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Inicializa los atributos de esta casilla con los atributos pasados como parametro. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & = true si la casilla es blanca o falso si es negra. \\
+\hline
+{\em h} & = indica si la casilla es horizontal. \\
+\hline
+{\em v} & = indica si la casilla es vertical. \\
+\hline
+{\em val} & = Indica el valor de la casilla. \\
+\hline
+{\em val\+Aux} & = Indica el valor auxiliar de la casilla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+Los atributos de esta casilla son iguales a los atributos pasados como parametro. 
+\end{DoxyPostcond}
+
+
+Definition at line 73 of file Casilla.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a26ece4b98497f730b8c5d644b2c463c8}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!get\+Horizontal@{get\+Horizontal}}
+\index{get\+Horizontal@{get\+Horizontal}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{get\+Horizontal()}
+{\footnotesize\ttfamily boolean get\+Horizontal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del valor horizontal de la casilla. 
+
+\begin{DoxyPostcond}{Postcondition}
+Retorna si la casilla es horizontal o no. 
+\end{DoxyPostcond}
+
+
+Definition at line 145 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_ad03300c6376c01027c7e7693a2dd2279}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!get\+Tipo@{get\+Tipo}}
+\index{get\+Tipo@{get\+Tipo}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{get\+Tipo()}
+{\footnotesize\ttfamily boolean get\+Tipo (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del tipo de la casilla. 
+
+\begin{DoxyPostcond}{Postcondition}
+Retorna true si la casilla es blanca y false si es negra. 
+\end{DoxyPostcond}
+
+
+Definition at line 130 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_ae8d545168f15c7f478e1fd3d4673622b}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!get\+Valor@{get\+Valor}}
+\index{get\+Valor@{get\+Valor}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{get\+Valor()}
+{\footnotesize\ttfamily int get\+Valor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del valor de la casilla. 
+
+\begin{DoxyPostcond}{Postcondition}
+Retorna el valor de la casilla. 
+\end{DoxyPostcond}
+
+
+Definition at line 135 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a1456d9e36a115ef665a8b8f97f232244}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!get\+Valor\+Aux@{get\+Valor\+Aux}}
+\index{get\+Valor\+Aux@{get\+Valor\+Aux}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{get\+Valor\+Aux()}
+{\footnotesize\ttfamily int get\+Valor\+Aux (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del valor auxiliar de la casilla. 
+
+\begin{DoxyPostcond}{Postcondition}
+Retorna el valor auxiliar de la casilla. 
+\end{DoxyPostcond}
+
+
+Definition at line 140 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a27c6abc4a3d15d86c82f7ffabca42650}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!get\+Vertical@{get\+Vertical}}
+\index{get\+Vertical@{get\+Vertical}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{get\+Vertical()}
+{\footnotesize\ttfamily boolean get\+Vertical (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del valor vertical de la casilla. 
+
+\begin{DoxyPostcond}{Postcondition}
+Retorna si la casilla es vertical o no. 
+\end{DoxyPostcond}
+
+
+Definition at line 150 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_ae13f88e922e1339355456062ad9fa359}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!getX@{getX}}
+\index{getX@{getX}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{get\+X()}
+{\footnotesize\ttfamily int getX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del valor X de la casilla. 
+
+\begin{DoxyPostcond}{Postcondition}
+Retorna el atributo X de la casilla. 
+\end{DoxyPostcond}
+
+
+Definition at line 160 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_aab81944f0a14bba932c0931899951937}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!getY@{getY}}
+\index{getY@{getY}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{get\+Y()}
+{\footnotesize\ttfamily int getY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Consultora del valor Y de la casilla. 
+
+\begin{DoxyPostcond}{Postcondition}
+Retorna el atributo Y de la casilla. 
+\end{DoxyPostcond}
+
+
+Definition at line 155 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_aa13c72fa2f4ed3ee3abc1fa8fbb375d3}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!set\+Horizontal@{set\+Horizontal}}
+\index{set\+Horizontal@{set\+Horizontal}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{set\+Horizontal()}
+{\footnotesize\ttfamily void set\+Horizontal (\begin{DoxyParamCaption}\item[{boolean}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifica el booleano horizontal de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & = indica si la casilla es horizontal o no. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casilla modifica el booleano horizontal de acuerdo al parametro pasado. 
+\end{DoxyPostcond}
+
+
+Definition at line 93 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_ad835c28dba2b7ebbf9c95fd81a3700ca}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!set\+Tipo@{set\+Tipo}}
+\index{set\+Tipo@{set\+Tipo}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{set\+Tipo()}
+{\footnotesize\ttfamily void set\+Tipo (\begin{DoxyParamCaption}\item[{boolean}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifica el tipo de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & = true indica que la casilla es blanca y false que es negra. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casilla modifica el tipo de acuerdo al parametro pasado. 
+\end{DoxyPostcond}
+
+
+Definition at line 87 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a9f88bf1a462e0301c0a78e3c40baaa91}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!set\+Valor@{set\+Valor}}
+\index{set\+Valor@{set\+Valor}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{set\+Valor()}
+{\footnotesize\ttfamily void set\+Valor (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifica el valor de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & = indica el nuevo valor de la casilla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casilla modifica el valor de acuerdo al parametro pasado. 
+\end{DoxyPostcond}
+
+
+Definition at line 105 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a57cc2f2b320fee75228671b47bd2c6c9}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!set\+Valor\+Aux@{set\+Valor\+Aux}}
+\index{set\+Valor\+Aux@{set\+Valor\+Aux}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{set\+Valor\+Aux()}
+{\footnotesize\ttfamily void set\+Valor\+Aux (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifica el valor auxiliar de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & = indica el nuevo valor auxiliar de la casilla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casilla modifica el valor auxiliar de acuerdo al parametro pasado. 
+\end{DoxyPostcond}
+
+
+Definition at line 111 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_a1c8dfaea880d06c914d02858a3d9a8c2}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!set\+Vertical@{set\+Vertical}}
+\index{set\+Vertical@{set\+Vertical}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{set\+Vertical()}
+{\footnotesize\ttfamily void set\+Vertical (\begin{DoxyParamCaption}\item[{boolean}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifica el booleano vertical de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v} & = indica si la casilla es vertical o no. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casilla modifica el booleano vertical de acuerdo al parametro pasado. 
+\end{DoxyPostcond}
+
+
+Definition at line 99 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_add2578ea6b65ad27a905a6d2048748bb}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!setX@{setX}}
+\index{setX@{setX}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{set\+X()}
+{\footnotesize\ttfamily void setX (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifica el atributo X de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & = indica el nuevo valor de X de la casilla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casilla modifica el valor de X de acuerdo al parametro pasado. 
+\end{DoxyPostcond}
+
+
+Definition at line 117 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_adea78a9ff1234e75627dda61d972213b}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!setY@{setY}}
+\index{setY@{setY}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{set\+Y()}
+{\footnotesize\ttfamily void setY (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Modifica el atributo Y de la casilla. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & = indica el nuevo valor de Y de la casilla. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+La casilla modifica el valor de Y de acuerdo al parametro pasado. 
+\end{DoxyPostcond}
+
+
+Definition at line 123 of file Casilla.\+java.
+
+\mbox{\label{class_dominio_1_1clases_1_1_casilla_ad146fa8579a5f8a876c4688cc5a68520}} 
+\index{Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Dominio\+::clases\+::\+Casilla@{Dominio\+::clases\+::\+Casilla}}
+\subsubsection{to\+String()}
+{\footnotesize\ttfamily String to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transforma la casilla al formato del kakuro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Retorna un string con los datos de la casilla transformados al formato del \doxyref{Kakuro}{p.}{class_dominio_1_1clases_1_1_kakuro}. 
+\end{DoxyPostcond}
+
+
+Definition at line 166 of file Casilla.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Dominio/clases/\textbf{ Casilla.\+java}\end{DoxyCompactItemize}

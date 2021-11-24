@@ -1,0 +1,5 @@
+<map id="DriverCapaDominioKakuro" name="DriverCapaDominioKakuro">
+<area shape="rect" id="node2" href="$class_dominio_1_1controladores_1_1_capa_dominio_kakuro.html" title="clase donde implementamos las funcionalidades principales del programa, siendo estas validar..." alt="" coords="84,5,240,32"/>
+<area shape="rect" id="node3" href="$class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html" title="Clase que se utiliza como intermediaria entre presentacion y persistencia. Transforma los datos que r..." alt="" coords="226,95,359,121"/>
+<area shape="rect" id="node4" href="$class_persistencia_1_1_ctrl_persistencia.html" title="Clase que se encarga de recibir consultas y enviar datos a las demás capas de proyecto. éstas consultas las llevará a la clase indicada y devolverá su resultado. " alt="" coords="264,5,388,32"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="CapaDominioKakuro" name="CapaDominioKakuro">
+<area shape="rect" id="node2" href="$class_dominio_1_1controladores_1_1_ctrl_capa_dominio.html" title="Clase que se utiliza como intermediaria entre presentacion y persistencia. Transforma los datos que r..." alt="" coords="61,95,194,121"/>
+<area shape="rect" id="node3" href="$class_persistencia_1_1_ctrl_persistencia.html" title="Clase que se encarga de recibir consultas y enviar datos a las demás capas de proyecto. éstas consultas las llevará a la clase indicada y devolverá su resultado. " alt="" coords="185,5,309,32"/>
+</map>

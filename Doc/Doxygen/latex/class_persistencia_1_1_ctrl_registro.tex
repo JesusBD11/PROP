@@ -1,0 +1,90 @@
+\section{Ctrl\+Registro Class Reference}
+\label{class_persistencia_1_1_ctrl_registro}\index{Ctrl\+Registro@{Ctrl\+Registro}}
+
+
+Clase que implementa la lectura y escritura del registro de usuarios en disco.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\textbf{ Ctrl\+Registro} ()
+\begin{DoxyCompactList}\small\item\em Creadora de Ctrl\+Regsitro. \end{DoxyCompactList}\item 
+void \textbf{ guardar\+\_\+registro} (Hash\+Map$<$ String, String $>$ p)
+\begin{DoxyCompactList}\small\item\em actualiza los datos de registro de Usuarios de la aplicacion \end{DoxyCompactList}\item 
+Hash\+Map$<$ String, String $>$ \textbf{ cargar\+\_\+registro} ()
+\begin{DoxyCompactList}\small\item\em busca los datos de registro y se los dara a la capa de dominio \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Clase que implementa la lectura y escritura del registro de usuarios en disco. 
+
+Definition at line 30 of file Ctrl\+Registro.\+java.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\label{class_persistencia_1_1_ctrl_registro_a437de195796d30bc8a1d4d282ddbe04e}} 
+\index{Persistencia\+::\+Ctrl\+Registro@{Persistencia\+::\+Ctrl\+Registro}!Ctrl\+Registro@{Ctrl\+Registro}}
+\index{Ctrl\+Registro@{Ctrl\+Registro}!Persistencia\+::\+Ctrl\+Registro@{Persistencia\+::\+Ctrl\+Registro}}
+\subsubsection{Ctrl\+Registro()}
+{\footnotesize\ttfamily \textbf{ Ctrl\+Registro} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Creadora de Ctrl\+Regsitro. 
+
+\begin{DoxyPostcond}{Postcondition}
+Crea una instancia de \doxyref{Ctrl\+Registro}{p.}{class_persistencia_1_1_ctrl_registro} 
+\end{DoxyPostcond}
+
+
+Definition at line 43 of file Ctrl\+Registro.\+java.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\label{class_persistencia_1_1_ctrl_registro_acda731d7e4bc2bc92db1cf54a9748d41}} 
+\index{Persistencia\+::\+Ctrl\+Registro@{Persistencia\+::\+Ctrl\+Registro}!cargar\+\_\+registro@{cargar\+\_\+registro}}
+\index{cargar\+\_\+registro@{cargar\+\_\+registro}!Persistencia\+::\+Ctrl\+Registro@{Persistencia\+::\+Ctrl\+Registro}}
+\subsubsection{cargar\+\_\+registro()}
+{\footnotesize\ttfamily Hash\+Map$<$String, String$>$ cargar\+\_\+registro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+busca los datos de registro y se los dara a la capa de dominio 
+
+\begin{DoxyPostcond}{Postcondition}
+devuelve un Hash\+Map con todos los datos de resgistro 
+\end{DoxyPostcond}
+
+
+Definition at line 93 of file Ctrl\+Registro.\+java.
+
+\mbox{\label{class_persistencia_1_1_ctrl_registro_adc7661864c664031968bfeccabd8c63f}} 
+\index{Persistencia\+::\+Ctrl\+Registro@{Persistencia\+::\+Ctrl\+Registro}!guardar\+\_\+registro@{guardar\+\_\+registro}}
+\index{guardar\+\_\+registro@{guardar\+\_\+registro}!Persistencia\+::\+Ctrl\+Registro@{Persistencia\+::\+Ctrl\+Registro}}
+\subsubsection{guardar\+\_\+registro()}
+{\footnotesize\ttfamily void guardar\+\_\+registro (\begin{DoxyParamCaption}\item[{Hash\+Map$<$ String, String $>$}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+actualiza los datos de registro de Usuarios de la aplicacion 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & = guarda los datos de los Usuarios\\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondition}
+se guardaran los datos de p en un txt 
+\end{DoxyPostcond}
+
+
+Definition at line 57 of file Ctrl\+Registro.\+java.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Persistencia/\textbf{ Ctrl\+Registro.\+java}\end{DoxyCompactItemize}
